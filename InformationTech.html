@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cyan-800 p-8 text-justify">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+
+
+    <!-- Main Heading -->
+    <h1 class="text-5xl text-white font-extrabold text-center mb-6">
+        Information Technology Specialization
+    </h1>
+
+    <!-- Specialization Summary -->
+    <div class="bg-white shadow-lg rounded-lg p-8">
+        <!-- <h2 class="text-4xl text-green-900 font-bold mb-4">Specialization Summary</h2> -->
+        <p class="text-gray-900 text-xl leading-relaxed">
+            The B.Tech. in IT program equips students with technical, managerial, and entrepreneurial skills to excel 
+            in roles such as software development, production support, research, and leadership. The program emphasizes 
+            ethical and social responsibility, preparing students to innovate and adapt to emerging technologies. This 
+            comprehensive approach ensures readiness to tackle evolving challenges in the global IT landscape.
+        </p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-8 flex justify-center mt-4 ">
+        <h2 class="text-3xl text-yellow-700 font-bold mb-4 ">Faculty Members</h2>
+     </div>
+    <div class="bg-white shadow-lg rounded-lg p-8 flex justify-center mt-4 ">
+            
+        <div class="flex flex-col ml-0 mr-8">
+           <h2 class="text-2xl font-bold"> Dr. M.Thenmozhi,</h2>
+           <p class="text-xl font-semibold"> Professor, NWC, SRMIST</p>
+           <h2 class="text-2xl font-bold"> Dr.N.Krishnaraj</h2>
+           <p class="text-xl font-semibold"> Professor, NWC, SRMIST</p>
+           <h2 class="text-2xl font-bold">Dr. P.Supraja</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+           <h2 class="text-2xl font-bold">Dr. L.N.B.Srinivas</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+           <h2 class="text-2xl font-bold">Dr. K.Nimala</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+           <h2 class="text-2xl font-bold">Dr. S.Metilda Florence</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+           <h2 class="text-2xl font-bold"> Dr. L.Anand</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+           <h2 class="text-2xl font-bold"> Dr. V.M.Gayathri</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+           <h2 class="text-2xl font-bold"> Dr. V.Elizabeth Jesi</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+           <h2 class="text-2xl font-bold"> Dr. G.Suseela</h2>
+           <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+        </div>
+        <div class="flex flex-col  ml-14 ">
+            <h2 class="text-2xl font-bold"> Dr. B.Yamini</h2>
+            <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Dr. A.Helen Victoria</h2>
+            <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Dr. R.Radhika</h2>
+            <p class="text-xl font-semibold">Associate Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Dr. M.Anand</h2>
+            <p class="text-xl font-semibold">Assistant Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Dr. Meenakshi K</h2>
+            <p class="text-xl font-semibold">Assistant Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Dr. G.Geetha</h2>
+            <p class="text-xl font-semibold">Assistant Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Dr. G.Saranya</h2>
+            <p class="text-xl font-semibold">Assistant Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Mrs. G.Divya</h2>
+            <p class="text-xl font-semibold">Assistant Professor, NWC, SRMIST.</p>
+            <h2 class="text-2xl font-bold"> Dr. M.Sivakumar</h2>
+            <p class="text-xl font-semibold">Assistant Professor, NWC, SRMIST.</p>
+        </div>
+        
+
+    </div>
+
+    <div class="bg-white shadow-lg rounded-lg p-8 mt-6">
+        <h1 class="text-4xl text-red-900 font-extrabold text-center mb-6">
+            Specialized Lab: Embedded AI Lab
+        </h1>
+       
+        <p>
+            The Embedded AI Lab, established in collaboration with NVIDIA GTC in February 2024, serves as a research 
+           hub dedicated to advancing artificial intelligence technologies. Fully sponsored by NVIDIA, the lab focuses 
+           on a wide spectrum of AI applications, including computer vision, natural language processing, robotics, and 
+           reinforcement learning. The lab’s objective is to foster cutting-edge research, innovation, and development in 
+           AI to address real-world challenges.
+           <p class="text-2xl font-semibold text-red-900">Ongoing Projects:</p> 
+
+            1. JetWifiScan: Wireless Network Scanning Application using NVIDIA Jetson Orin
+            <br>
+            2. Ear Biometric System
+            <br>
+            3. IoT-Based Animal Detection and Alert System
+            <br>
+            4. Student Attendance Monitoring System
+            <br>
+            5. Garbage Detection in Hallways and Universities
+            <br>
+            6. Human Safety Detection at Construction Sites
+            <br>
+            7. Person Identification System for Departments
+            <br>
+           
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-8 mt-6">
+        <h2 class="text-3xl text-yellow-700 font-bold mb-4"> Memorandum of Understanding (MoU)</h2>
+        <p class="text-gray-900 text-xl mt-4 leading-relaxed">
+            In the specialization of Information Technology (IT) the MoUs were signed with Ajna Labs Pvt. 
+            Ltd. (2021), VEI Technologies (2021), and ExcelR Solutions (2022). The Ajna Labs MoU, spanning 
+            five years, facilitates student internships, joint research projects, and placements in the 
+            Computer Vision domain. The VEI Technologies MoU (2021-2026) introduced a four-week 
+            internship program in 2021, engaging 25 students. Meanwhile, the ExcelR Solutions MoU (2022
+            2027) conducted a 40-hour training program in 2022, benefiting 135 students. These collaborations 
+            focus on practical training, industry exposure, and research initiatives, enhancing students’ 
+            skills and employability in the IT sector
+
+        </p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-8 mt-6">
+        <h1 class="text-4xl text-red-900 font-extrabold text-center mb-6">
+            Specialized Highlights:
+            <br>
+             New Course Launch – Powering Digital Economy
+        </h1>
+        <p>
+          <p class="text-2xl font-semibold text-red-900">Course Code: CSV0817T
+                <br>
+            In Collaboration With: Prof. Sudhir Dixit, University of Oslo</p>
+            <br>
+            The department proudly launched a one-credit course, “Powering Digital Economy,” aimed at equipping 
+           
+           students with in-depth knowledge of digital transformation strategies, fintech innovations, and data-driven 
+           business models.
+           <p class="text-2xl font-semibold text-red-900"> Course Highlights:</p>
+           <br>
+            Exploring blockchain, AI, and cloud computing in the digital economy.
+            <br>
+         Case studies on global financial technology advancements.
+         <br>
+             Industry-led insights for bridging the gap between academia and real-world applications.
+             <br>
+             <p class="text-2xl font-semibold text-red-900"> Impact:</p> This course will empower students to lead in the evolving digital landscape by integrating technology 
+           with economic strategies
+
+              <!-- Internship Opportunities -->
+    <div class="bg-white shadow-lg rounded-lg p-8 mt-6">
+        <h1 class="text-4xl text-red-900 font-extrabold text-center mb-6">
+           Other Highlights
+           <br>
+            Internship Opportunities – Expanding Industry Engagement
+        </h1>
+
+        <h2 class="text-3xl font-semibold text-pink-800 mb-4">Faculty Mentors:</h2>
+        <p class="text-gray-900 text-xl leading-relaxed">
+            Dr. M. Thenmozhi & Dr. M. Maranco
+        </p>
+
+        <p class="text-gray-900 text-xl mt-4 leading-relaxed">
+            In a bid to nurture young talent and foster cross-institutional learning, the department extended 
+            internship opportunities to students from various institutes. Under the mentorship of Dr. M. Thenmozhi 
+            and Dr. M. Maranco, interns gained hands-on exposure in:
+        </p>
+
+        <!-- Internship Highlights -->
+        <h2 class="text-3xl font-semibold text-pink-800 mt-6">Highlights:</h2>
+        <ul class="list-disc list-inside text-gray-900 text-xl mt-2 leading-relaxed">
+            <li>AI-driven data analytics and cybersecurity solutions.</li>
+            <li>Cloud computing and IoT-based applications.</li>
+            <li>Real-world research projects aligned with industry needs.</li>
+        </ul>
+
+        <!-- Outcome Section -->
+        <h2 class="text-3xl font-semibold text-pink-800 mt-6">Outcome:</h2>
+        <p class="text-gray-900 text-xl mt-2 leading-relaxed">
+            Strengthened industry-academia collaboration while empowering students with practical skills and research insights.
+        </p>
+    </div>
+    
+          
+           <div class="flex items-start space-x-6 bg-white shadow-lg rounded-lg p-8 mt-6">
+            <!-- Text Content -->
+            <div class="flex-1">
+                <p class="text-2xl font-semibold text-red-900">SRG-IT Talk Series:</p>
+                <p class="text-xl text-gray-900 leading-relaxed">
+                    <b><i>Aspect-Based Sentiment</i></b> Analysis <br>
+                    by Dr. Sivakumar M <br><br>
+        
+                    <b><i>Intrusion Detection System Using Improved Pelican Optimization Algorithm</i></b> <br>
+                    by Dr. Radhika <br><br>
+        
+                    <b><i>Values Connecting SDGs</i></b> <br>
+                    by Dr. Supraja P <br><br>
+        
+                    <b><i>Advancements in Sustainable Research</i></b> <br>
+                    by Dr. Yaminiw
+                </p>
+            </div>
+        
+            <!-- Image Section -->
+            <div class="w-1/3">
+                <img src="f5.jpg" alt="Talk Series" class="rounded-lg shadow-md w-full">
+            </div>
+        </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-8 mt-6">
+        <h1 class="text-4xl text-red-900 font-extrabold text-center mb-6">
+            India Mobile Congress 2024 – Showcasing Innovation in Smart Cities
+        </h1>
+        <br>
+       <b><i>  
+        
+        Date   :    October 15–18, 2024
+        <br>
+                Venue  :    Pragati Maidan, New Delhi
+                <br>
+         Presenter  :   Dr. M. Thenmozhi</i></b>
+
+         <p> The 8th Edition of the India Mobile Congress (IMC) served as a global platform for technological advancements 
+           in 5G, AI, and smart solutions. Dr. M. Thenmozhi proudly represented the department by showcasing a Smart 
+           Parking System, an IoT-powered solution designed to optimize urban mobility.
+           <br>
+           <b><i>Smart Parking System Features:</i></b> 
+            <br>
+             AI-based real-time space detection and allocation.
+             <br>
+             IoT sensors for automated monitoring and reduced congestion.
+             <br>
+              Mobile app integration for seamless user access.
+              <br>
+            <p class="text-2xl font-semibold text-green-900">Impact: </p>The innovation attracted industry interest, paving the way for potential collaborations in smart 
+           infrastructure development</p>
+           <p class="text-2xl font-semibold text-blue-900"> Specialized Activities</p>
+        <p class="text-2xl font-semibold text-red-900"><b><i>NLP Workshop – Advancing AI in Language Processing</i></b></p>
+        <b><i>Date: December 2–9, 2024</i></b><br>
+        <b><i>Venue: Panimalar Engineering College</i></b><br>
+        <b><i>Speaker: Dr. Meenakshi K</i></b>
+        <br>
+      As part of the Faculty Development Program (FDP) on   <b><i class="text-purple-700"> “NLP Using Pre-trained Language Models and 
+       Transfer Learning,”</i></b> Dr. K.Meenakshi delivered an insightful seminar on   <b><i class="text-purple-700">“Basic Introduction to NLP and
+       Hands-on Training.”</i></b>
+       <br>
+        <b><i>Key Takeaways:</i></b>
+          Introduction to Natural Language Processing (NLP) concepts.
+          Hands-on training with pre-trained models and transfer learning.
+          Applications of NLP in speech recognition, sentiment analysis, and chatbots.
+        Outcome: Faculty members gained practical expertise in NLP model implementation, enabling them to 
+       integrate AI-driven solutions into academic research and teaching.
+       <img src="f6.jpg" alt="Talk Series" class="rounded-lg shadow-md">
+    </p>
+    </div>
+    <!-- Specialization Events / Activities -->
+    <!-- <div class="bg-white shadow-lg rounded-lg p-8 mt-6">
+        <h2 class="text-3xl text-yellow-700 font-bold mb-4">Specialization Events & Activities</h2>
+        <p class="text-gray-900 text-xl">
+            <span class="font-bold">ACM India Hackathon – NariYukthi Tech Hack 2024</span><br>
+            <span class="font-semibold">Rounds Conducted:</span> Dec 7 & Dec 20, 2024<br>
+            <span class="font-semibold">Judge:</span> Dr. M. Thenmozhi
+        </p>
+        <p class="text-gray-900 text-xl mt-4 leading-relaxed">
+            The NariYukthi Tech Hack 2024, organized by ACM India, brought together young innovators and problem-solvers 
+            to develop cutting-edge solutions in AI, cybersecurity, and emerging technologies. 
+            Dr. M. Thenmozhi served as a panel judge, evaluating projects based on innovation, technical execution, and real-world applicability.
+        </p> -->
+
+        <!-- Highlights Section -->
+        <!-- <h3 class="text-2xl text-pink-900 mt-6 font-bold">Highlights:</h3>
+        <ul class="list-disc list-inside text-gray-900 text-xl mt-2 leading-relaxed">
+            <li>Two intense rounds of competition featuring AI-driven and sustainable tech solutions.</li>
+            <li>Encouraged women in technology, fostering inclusivity and leadership in STEM.</li>
+            <li>Promoted collaborative learning and industry-aligned problem-solving.</li>
+        </ul> -->
+        
+    </div>
+
+ <script src="nwc.js"></script>
+  
+   
+</body>
+</html>

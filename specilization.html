@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+    <div class="container mx-auto p-6">
+        <h1 class="text-blue-700 text-2xl font-bold text-center">Salient Features of</h1>
+        <h2 class="text-blue-700 text-4xl font-bold text-center mb-6">Specializations</h2>
+
+        <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+            <h3 class="text-red-900 font-bold text-2xl mb-4">Cyber Security Specialization Overview</h3>
+            <p class="text-lg leading-relaxed">
+                Cyber Security is a rapidly evolving specialization that safeguards digital assets, networks, and infrastructures from malicious activities. Programs offered under this specialization include:
+            </p>
+            <ul class="list-disc ml-8 mt-4 text-lg">
+                <li><b>B.Tech:</b> Computer Science & Engineering with Cyber Security.</li>
+                <li><b>M.Tech:</b> Cyber Security, Information Security, and Cyber Forensics.</li>
+                <li><b>Integrated M.Tech:</b> Cyber Security & Digital Forensics.</li>
+                <li><b>Minor Specialization:</b> Cyber Security.</li>
+            </ul>
+            <p class="text-lg leading-relaxed mt-4">
+                The specialization bridges the gap between theoretical learning and practical applications by integrating cutting-edge technologies and industry-sponsored labs. Students gain expertise in vulnerability assessment, malware analysis, digital forensics, and identity management.
+            </p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-red-900 font-bold text-2xl mb-4">Events and Activities (Oct - Dec 2024)</h3>
+            <div class="ml-8 text-lg">
+                <p><b><i>1. Cyber Jagrookta Diwas:</i></b></p>
+                <p class="text-blue-700 font-semibold">Description:</p>
+                <p>Awareness sessions on cybersecurity in collaboration with the Government of India.</p>
+                <p class="text-blue-700 font-semibold">Speakers:</p>
+                <p>Industry experts from CDAC and K7 Computing.</p>
+                
+                <p class="mt-4"><b><i>2. Red Hat Global Certification Drives:</i></b></p>
+                <p class="text-blue-700 font-semibold">Description:</p>
+                <p>Certification programs for students and faculty on Red Hat technologies.</p>
+                <p class="text-blue-700 font-semibold">Outcome:</p>
+                <p>Students achieved Red Hat certifications, enhancing their industry readiness.</p>
+                
+                <p class="mt-4"><b><i>3. Workshops on Threat Intelligence Systems (TIS):</i></b></p>
+                <p class="text-blue-700 font-semibold">Description:</p>
+                <p>Interactive sessions on deploying threat intelligence systems as SaaS or on-premises solutions.</p>
+                <p class="text-blue-700 font-semibold">Participants:</p>
+                <p>UG, PG, and research scholars.</p>
+                
+                <p class="mt-4"><b><i>4. Hack the Box Club Activities:</i></b></p>
+                <p class="text-blue-700 font-semibold">Description:</p>
+                <p>Hands-on challenges and competitions for students to practice penetration testing and ethical hacking skills.</p>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6">
+                </div>
+        </div>
+    </div>
+    <script src="nwc.js"></script>
+</body>
+</html>

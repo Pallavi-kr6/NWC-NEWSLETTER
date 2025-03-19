@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Articles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: justify;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .article-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 40%;
+            height: auto;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        .references p {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            .article-img {
+                max-width: 80%;
+            }
+            .content {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+    <div class="header">
+        <h1>STUDENTS ARTICLES</h1>
+    </div>
+
+    <div class="content">
+        <img src="imagess/9th.png" alt="9th Image" class="article-img">
+        <h2>Tanisha Jain (RA22110310100290)</h2>
+        <p><strong>Networking and Communications</strong></p>
+        <p>III year - IT - U1 section</p>
+        <h2>“Tech Horizons: Innovations Shaping Our Future”</h2>
+        <p> Innovation is changing the world in how we live, work, and connect at 
+            the helm of this revolution is Generative AI: which can create realistic 
+            text, images, and even more to reimagine entertainment, healthcare, 
+            and much more. Quantum Computing has the ability to solve some of 
+            the world’s toughest problems, from cryptography and drug discovery, 
+            to possibilities once only dreamed of. 5G rollouts are enabling faster 
+            speeds, ultra-low latency, and seamless IoT connectivity toward the 
+            realization of smarter cities. Virtual Reality (VR) 2.0 has arrived. 
+            With its photo-realistic simulating capabilities, gaming, training, and 
+            even entertainment will not be the same. Augmented Reality (AR) is 
+            increasingly blurring digital and physical reality in how one shops, 
+            learns, and relates to others. These technologies mark a new course 
+            toward a better future.</p>
+    </div>
+
+    <div class="content">
+        <img src="imagess/10th.png" alt="10th Image" class="article-img">
+        <h2>Utkarsh Jaiswal (RA2311030010011)</h2>
+        <p><strong>Networking and Communications</strong></p>
+        <p>II Year - CS - X1 Section</p>
+        <!-- <h2>Decoding the Web: Exploring the Depths of Exploitation | CTF Newbies</h2> -->
+        <p> Solving Web CTF challenges helps improve skills for bug bounty 
+            programs by identifying vulnerabilities in real-world web applications. 
+            Successful reporting can result in monetary rewards or inclusion in a 
+            Hall of Fame.</p>
+            <div class="topic">  Common Web Vulnerabilities:
+                SQL Injection (SQLi)</div>
+                <p id="para3"> •  Manipulates database queries to 
+                    gain unauthorized access or control.</p>
+                <p id="para3"> •  Exploits lack of input sanitization. 
+                    Example payload: ‘ OR 1=1 -- bypasses 
+                    authentication.</p>
+                <p id="para3"> •  Impact: Extracts, alters, or deletes 
+                    sensitive data.</p>
+                <p id="para3"> •  Example: Transfers funds using 
+                    hidden malicious forms.</p>
+                <p id="para3"> •  Impact: Financial loss, account 
+                    manipulation.</p>
+                    <div class="topic"> Cross-Site Scripting (XSS)</div>
+                    <p id="para3"> •  Injects malicious scripts into trusted 
+                        websites.<br>
+                         •  Impact: Data theft, session hijacking.<br>
+                         • Prevention: Input sanitization, 
+                        Content Security Policy (CSP).<br></p>
+                        <div class="topic"> Command Injection</div>
+                        <p id="para3"> •  Executes OS commands on a 
+                            server through vulnerable apps.<br>
+                             •    Exploit: Using input like 127.0.0.1; 
+                            ls lists server files.<br>
+                             • Impact: Server control, file 
+                            manipulation, or spawning reverse 
+                            shells.<br></p>
+                            <div class="topic">  Directory Traversal</div>
+                            <p id="para3"> •  Accesses restricted files via 
+                                manipulated paths (e.g., ../../../etc/
+                                 passwd).<br>
+                                 •  Impact: Unauthorized access to 
+                                sensitive information<br></p>
+                                <div class="topic">Cross-Site Request Forgery 
+                                    (CSRF)</div>
+                                    <p id="para3"> •  Tricks authenticated users into 
+                                        performing unintended actions.<br>
+                                        •  Example: Transfers funds using 
+                                        hidden malicious forms.<br>
+                                         •  Impact: Financial loss, account 
+                                        manipulation.</p>
+                                        <div class="topic"> Resoures:</div>
+                                        <p id="para3">•   CTF Walkthroughs: Search write
+                                            ups for solutions.<br>
+                                             •  Infosec Researchers on Twitter: 
+                                            Follow for tips.<br>
+                                             •  Stack Overflow: Reference 
+                                            common issues and solutions.<br></p>
+    </div>
+
+    <div class="content">
+        <img src="imagess/11th.png" alt="11th Image" class="article-img">
+        <h2>Harini (RA2311031010027)</h2>
+        <p><strong>II year - IT - W2 section</strong></p>
+        <h2>Revolutionizing Reality: The Convergence of Technologies</h2>
+        <p> <b>Introduction</b>
+            <br>
+            We are living in an era of unprecedented technological 
+           advancements. Artificial intelligence, the Internet of Things, 
+           blockchain, and 5G networks are transforming our world, redefining 
+           industries, and revolutionizing the way we live, work, and interact. In 
+           this article, we will explore the convergence of these technologies 
+           and their impact on our future.
+           <br>
+            <b>The Rise of Intelligent Machines</b>
+            <br>
+            Artificial intelligence and machine learning are pushing the 
+           boundaries of human capabilities. AI-powered systems can analyze 
+           vast amounts of data, identify patterns, and make decisions 
+           without human intervention. Machine learning algorithms are 
+           being applied in healthcare, finance, and education, enhancing 
+           diagnosis, prediction, and personalization.
+           <br>
+            <b>The Internet of Things: A Hyper-Connected World</b>
+           <br>
+            The Internet of Things is creating a world where everything is interconnected. From smart homes and cities to 
+           industrial automation and wearable devices, IoT applications are transforming the way we live and work. With 
+           IoT, we can expect increased efficiency, improved safety, and enhanced customer experiences.
+           <br>
+           <b> Blockchain Technology: Secure, Transparent, and Immutable</b>
+           <br>
+            Blockchain is a game-changer for industries that require secure, transparent, and immutable data management. 
+           From finance and healthcare to supply chain management and cybersecurity, blockchain technology is 
+           redefining the way we trust and verify data. With blockchain, we can expect increased security, reduced 
+           costs, and improved compliance.
+           <br>
+            <b>5G Networks: Faster, Smarter, and More Connected</b>
+            <br>
+            The fifth generation of wireless network technology, 5G, promises faster data speeds, lower latency, and 
+           greater connectivity. This will enable widespread adoption of IoT devices, enhance mobile broadband 
+           experiences, and support mission-critical communications. With 5G, we can expect increased productivity, 
+           improved healthcare outcomes, and enhanced customer experiences.
+           <br>
+            <b>The Future is Now</b>
+            <br>
+            The convergence of these technologies is creating a future that’s more efficient, sustainable, and connected. 
+           As we continue to innovate and adopt these technologies, we can expect even more exciting developments 
+           in the years to come. The future is no longer a distant dream; it’s a reality that’s unfolding before our eyes.
+           <br>
+           <b>Conclusion</b> 
+           <br>
+            The convergence of artificial intelligence, the Internet of Things, blockchain, and 5G networks is revolutionizing 
+           our world. As we embark on this journey, it’s essential to consider the implications of these technologies on our 
+           society, economy, and environment. By embracing these technologies and working together, we can create a 
+           future that’s brighter, more sustainable, and more connected.
+           <br>
+            <b>References</b>
+            <br>
+            1. “The Singularity Is Near” by Ray Kurzweil
+            2. “Blockchain Revolution” by Don and Alex Tapscott
+            3. “The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future” by Kevin Kelly</p>
+    </div>
+
+    <div class="content">
+        <img src="imagess/12th.png" alt="12th Image" class="article-img">
+        <h2>Suryansh Mishra (RA2411031010011)</h2>
+        <p><strong>I year - CSE - IT (W2)</strong></p>
+        <h2>Generative AI: The Boon and the Bane</h2>
+        <p> Generative AI has been all the hype in recent times. Everything, 
+            from posters for movies to full-fledged films, can now be made 
+            using Generative Artificial Intelligence.
+             Generative Artificial Intelligence is a system that helps us produce 
+            or create something, usually through a defined set of rules or a 
+            predefined mechanism. The introduction of generative abilities 
+            to already powerful AI engines is nothing less than a significant 
+            breakthrough.
+             This new development allows human creativity to run wild, with 
+            endless possibilities popping up everywhere. Some consider 
+            it a boon, while others see it as a bane. The important thing to 
+            understand is that AI tools tend to make a gradual shift from being 
+            a bane to a boon. For example, a boss might start using generative 
+            AI techniques to create posters for their firm, which helps them 
+            eliminate the need for a design department entirely. In this scenario, AI is a boon for the boss. On the other 
+            hand, the recently fired design department employees are left jobless due to the rise of fast and efficient AI 
+            tools, making AI a bane for them.
+             However, AI cannot function entirely on its own. It is still in its early stages and requires prompts to imagine 
+            and develop something. Only a person with a knack for creativity and design knows the exact prompts needed 
+            to achieve the desired results. This, in turn, can lead to rehiring some design professionals who will now earn 
+            the same amount of money with a significantly lower workload. Thus, AI also has the potential to turn into a 
+            boon for the design employees.
+             With the arrival of tools like ChatGPT, DALL•E, Jasper, and others, the process of producing creative, fresh, and 
+            easily understandable content for the mass market has become easier than ever. Now, anyone with the right 
+            tools and mindset can start their own design and marketing business. A comprehensive knowledge of design 
+            systems and access to Artificial Intelligence tools are the only requirements to successfully begin a career in 
+            design and marketing.
+             While this has undoubtedly simplified many processes, ethical challenges remain in the field of artificial 
+            intelligence. The recent rise in plagiarism, music sampling, deep fakes, and similar issues has raised concerns 
+            about the ethical use of AI. Restrictions need to be placed, and a set of rules must be established, but these 
+            must also consider an individual’s creative freedom. The moment rules become too rigid, the bridge between 
+            freedom and creativity begins to erode.
+             In conclusion, Generative AI stands at the crossroads of innovation and ethical debate. It has undoubtedly 
+            revolutionized creative industries, making design and marketing accessible to millions, but it has also raised 
+            a host of serious concerns about job displacement, ethical misuse, and the dilution of originality. The key 
+            to leveraging this powerful technology lies in striking a balance embracing its potential to enhance human 
+            creativity while implementing thoughtful regulations to address its pitfalls. Ultimately, the future of generative 
+            AI will depend on how responsibly we harness its capabilities to build a world that values both progress and 
+            integrity</p>
+    </div>
+<script src="nwc.js"></script>
+</body>
+</html>
