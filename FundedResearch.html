@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center p-6 flex-col">
+   
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+    
+    
+       
+
+        <div class="bg-white shadow-lg rounded-lg w-full max-w-5xl p-8">
+            
+            <!-- Section Headers -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold text-blue-700">Spotlight on Innovation</h2>
+                <h1 class="text-3xl font-bold text-blue-900 mt-2">FUNDED RESEARCH PROJECTS</h1>
+            </div>
+
+            <!-- Separator with Date -->
+            <div class="flex items-center my-4">
+                <hr class="flex-grow border-t-2 border-gray-400">
+                <p class="text-lg font-semibold text-gray-700 mx-3"><i>October - December 2024</i></p>
+                <hr class="flex-grow border-t-2 border-gray-400">
+            </div>
+
+            <!-- Description -->
+            <div class="text-center text-gray-700 text-lg mb-6">
+                <p>
+                    We are delighted to highlight the innovative projects funded under the 
+                    <b class="text-blue-900">Selective Excellence Research Initiative (SERI) - 2024</b>, which showcase the 
+                    groundbreaking contributions of our faculty members in <span class="text-blue-700 font-semibold">healthcare and wearable technologies</span>.
+                </p>
+            </div>
+
+            <!-- Research Projects -->
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-blue-900">Medic Reminder: A Mobile App for Maintaining Your Health Regimen</h3>
+                    <p class="text-gray-700"><b>Principal Investigator:</b> Dr. Vaishnavi Moorthy</p>
+                    <p class="text-gray-700"><b>Funding Agency:</b> SERI (Selective Excellence Research Initiative – 2024)</p>
+                    <p class="text-gray-700"><b>Project Highlights:</b> This project aims to develop Medic Food - A Drug-Food Interaction Mobile Application (Phase 2), a user-friendly app designed to help individuals manage their health regimen effectively. The application focuses on drug-food interactions to improve health outcomes.</p>
+                    <p class="text-gray-700 font-semibold">Funding Amount: ₹1,15,000/-</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-blue-900">Smart Wearable Fog Forecaster for De-Fog Unit in Parkinson’s Disease</h3>
+                    <p class="text-gray-700"><b>Principal Investigator:</b> Dr. Banu Priya</p>
+                    <p class="text-gray-700"><b>Funding Agency:</b> SERI (Selective Excellence Research Initiative – 2024)</p>
+                    <p class="text-gray-700"><b>Project Highlights:</b> This project explores cutting-edge wearable technology designed to address Freezing of Gait (FoG) in Parkinson’s Disease patients. The innovative “De-Fog Unit” aims to forecast and mitigate FoG episodes, improving mobility and quality of life.</p>
+                    <p class="text-gray-700 font-semibold">Funding Amount: ₹2,15,000/-</p>
+                </div>
+                <p class="text-gray-700 font-semibold">These projects underline our institution’s commitment to advancing research in healthcare technology 
+                    and fostering a culture of innovation.</p>
+            </div>
+        </div>
+    </div>
+    <script src="nwc.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            color: #1e1e1e;
+            position: relative;
+            text-align: justify;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .header {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #1e1e1e;
+            background-color: #f8d7da;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .profile-section {
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #fce4ec;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-section:hover {
+            transform: translateY(-5px);
+        }
+        .profile-image {
+            flex-shrink: 0;
+            width: 200px;
+        }
+        .profile-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .profile-info {
+            flex-grow: 1;
+            text-align: justify;
+        }
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 350px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+                width: 90%;
+            }
+            .image-gallery {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">
+        <img src="logo.png" alt="Watermark Logo">
+    </div>
+    <style>
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            z-index: -1;
+        }
+    </style>
+    <div class="container">
+        <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+            <img src="logo.png" style="height: 48px;" alt="Logo">
+            <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+        </div>
+        
+        <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+            <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+                <option>HOMEPAGE SECTION</option>
+                <option value="homePage.html">HomePage</option>
+            </select>
+            <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+                <option>FACULTY SECTION</option>
+                <option value="faculty.html">FACULTY</option>
+                <option value="essays.html">Faculty Articles</option>
+                <option value="achivements.html">Faculty Achievements</option>
+                <option value="promotion.html">Faculty Promotions</option>
+            </select>
+    
+            <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+                <option value="#">EVENTS SECTION</option>
+                <option value="events.html">Events</option>
+            </select>
+    
+            <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+                <option value="#">Research Section</option>
+                <option value="patent.html">PATENTS</option>
+                <option value="FundedResearch.html">Fundings</option>
+                <option value="journalism.html">Journals</option>
+            </select>
+    
+            <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+                <option value="#">STUDENTS</option>
+                <option value="Studentachivement.html">Achievements</option>
+                <option value="placement.html">Placements</option>
+                <option value="StudentAlumini.html">Alumni Message</option>
+                <option value="StudentArticle.html">Student Article</option>
+                <option value="mou.html">International Collaboration</option>
+            </select>
+    
+            <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+                <option value="#">Specialization Section</option>
+                <option value="cyberLab.html">Cyber Security</option>
+                <option value="InformationTech.html">Information Technology</option>
+                <option value="cloudComp.html">Cloud Computing</option>
+                <option value="iot.html">Internet of Things</option>
+                <option value="clomputerNetworking.html">Computer Networking</option>
+            </select>
+        </div>
+        <div class="header">Meet Our Professionals</div>
+        
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="1.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2>Your First Step: From Student to Working Professional</h2>
+                <p><strong>Date:</strong> 04.10.2024</p>
+                <p><strong>Convener:</strong> Dr. M.Lakshmi, Professor & Head, NWC</p>
+                <p><strong>Co-Conveners:</strong> Dr. Saranya G, Assistant Professor, NWC; Dr. Savaridassan P, Assistant Professor, NWC</p>
+                <p><strong>Resource Person:</strong> Mr. Umansh Agarwal, Senior Analyst (SOAR Operations), EY India LLP.</p>
+                <p><strong>Event Summary:</strong> The placement talk aimed to equip students with essential skills and knowledge for a smooth transition into the workforce. The session emphasized career planning, networking, and balancing technical and soft skills to excel in today's job market.</p>
+            </div>
+        </div>
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="2.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2>Career Paths in Computer Networking</h2>
+                <p><strong>Date:</strong> 10.10.2024</p>
+                <p><strong>Convener:</strong> Dr. M.Lakshmi, Professor & Head, NWC</p>
+                <p><strong>Coordinators:</strong> Dr. Abinaya G, Assistant Professor, NWC; Dr. Vinothkumar C. N.S, Associate Professor, NWC</p>
+                <p><strong>Resource Person:</strong> Ms. Ponnu Sharma, Senior Cybersecurity Analyst at Eltropy</p>
+                <p><strong>Event Summary:</strong> The talk provided insights into networking roles, essential skills, and certifications. It explored career paths like Network Engineer, Cybersecurity Analyst, and Network Consultant, emphasizing networking’s importance in an interconnected world.</p>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="3.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2>Ace Your Campus Placements: Insights and Best Practices</h2>
+                <p><strong>Date:</strong> 24.10.2024</p>
+                <p><strong>Convener:</strong> Dr. M.Lakshmi, Professor & Head, NWC; Dr. G.Suseela, Associate Professor, NWC</p>
+                <p><strong>Resource Person:</strong> Mr. Aditya, Project Manager and Service Delivery Manager, Tata Consultancy Services</p>
+                <p><strong>Event Summary:</strong> The session covered Aptitude Tests, Resume Building, and Interview Preparation. Key topics included time management, Data Structures & Algorithms, and crafting impactful resumes, with insights on Generative AI’s role in hiring.</p>
+            </div>
+        </div>
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="ed.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h2>From Hackers to Heroes: Careers in Cybersecurity</h2>
+                <p><strong>Date:</strong> 07.11.2024 </p>
+                <p><strong>Convener:</strong> Dr. M.Lakshmi, Professor & Head, NWC</p>
+                <p><strong>Resource Person:</strong> Ms. Manubhav Sharma Threat Analyst, Sophos Pvt Ltd</p>
+                <p><strong>Event Summary:</strong> A Career Talk titled “From Hackers to Heroes: Careers
+                    in Cybersecurity” was held on 7th November 2024 to
+                    inspire and guide students preparing for placements.
+                    The session focused on the evolving field of
+                    cybersecurity, highlighting the critical role of ethical
+                    hackers and cybersecurity professionals in protecting
+                    digital ecosystems. The speaker emphasized the
+                    growing demand for skilled professionals in the
+                    industry and how cybersecurity has transitioned from being a niche domain to a mainstream and
+                    indispensable career choice. Students were encouraged to evaluate their current skill sets and
+                    identify areas for improvement. This interactive and engaging session motivated students to align
+                    their career aspirations with the dynamic and challenging world of cybersecurity</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">Alumni Talks</div>
+        <div class="profile-section">
+            <div class="profile-info">
+                <h2>Alumni Reunion Day</h2>
+                <p><strong>Date:</strong> 21.12.2024</p>
+                <p><strong>Time:</strong> 2:00 PM</p>
+                <p><strong>Convener:</strong> Dr. M.Lakshmi, Professor & Head, NWC</p>
+                <p><strong>Coordinators:</strong> Dr. K. Venkatesh, Associate Professor, NWC; Dr. J. Godwin Ponsam, Associate Professor, NWC</p>
+                <p><strong>Chief Guest:</strong> Dr. Revathi Venkataraman, Chairperson, School of Computing</p>
+                <p><strong>Event Summary:</strong> The Alumni Reunion event brought together over 25 alumni, faculty members, and students, including international attendees. The event received enthusiastic feedback, with alumni expressing appreciation and a desire for more gatherings.</p>
+                <div class="image-gallery">
+                    <img src="5a.png" alt="Alumni Event Image 1">
+                    <img src="5b.png" alt="Alumni Event Image 2">
+                    <img src="5c.png" alt="Alumni Event Image 3">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">Building Bonds: A Day of Care and Compassion</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>The outreach event ‘Building Bonds: A Day of Care and Compassion’ for the NSS Outreach Program had a positive impact, bringing together students and staff within the Department of Networking and Communications. By introducing the program’s initiatives, teaching activities, and fun sessions led by students and faculty, the event set the stage for future outreach activities. Students left with a clearer understanding of the program’s goals and how they could get involved, sparking their enthusiasm and interest. The emphasis on teamwork, community engagement, and social responsibility motivated everyone, setting the tone for an exciting and productive year ahead.</p>
+                    <p><strong>Date:</strong> 14.10.2024</p>
+                    <p><strong>Professional body:</strong> Prema Vasam, Gerugambakkam</p>
+                    <p><strong>Conveners:</strong></p>
+                    <ul>
+                        <li>Dr. S. Muruganandam, Associate Professor, NWC</li>
+                        <li>Dr. M. Safa, Assistant Professor, NWC</li>
+                        <li>Dr. V. Elizabeth Jesi, Assistant Professor, NWC</li>
+                        <li>Dr. K.M. Uma Maheswari, Assistant Professor, CTECH</li>
+                    </ul>
+                    <p><strong>Co-Conveners:</strong></p>
+                    <ul>
+                        <li>Dr. P. Balamurugan, Associate Professor, NWC</li>
+                        <li>Dr. G. Saranya, Assistant Professor, NWC</li>
+                        <li>Dr. K. Meenakshi, Assistant Professor, NWC</li>
+                        <li>Dr. P. Balaji Srikanth, Assistant Professor, NWC</li>
+                        <li>Dr. V. Prakash, Assistant Professor, NWC</li>
+                        <li>Dr. G. Manoj, Assistant Professor, NWC</li>
+                    </ul>
+                    <p><strong>Organising Committee:</strong></p>
+                    <ul>
+                        <li>Dr. C. Fancy, Associate Professor, NWC</li>
+                        <li>Dr. P. Mahalakshmi, Assistant Professor, NWC</li>
+                        <li>Mr. H. Karthikeyan, Assistant Professor, NWC</li>
+                        <li>Mr. K. Jayavelu, DTP Operator, NWC</li>
+                        <li>Ms. P. Devi, Programmer, NWC</li>
+                    </ul>
+                    <div class="image-gallery">
+                        <img src="6a.png" alt="Event Image 1">
+                        <img src="6b.png" alt="Event Image 2">
+                        <img src="6c.png" alt="Event Image 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">Unnath Bharath Abhiyan Baseline Household Survey</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>An outreach activity titled ‘Unnath Bharath Abhiyan Baseline Household Survey’ was conducted to assess the utilization of government schemes and the availability of basic amenities among residents. The survey, organized under the Unnath Bharath Abhiyan initiative, took place in the streets of Singaperumal Koil on 23.10.2024, with active participation from students. This activity provided valuable insights into the needs and challenges of the local community while fostering awareness among students about social issues.</p>
+                    <p><strong>Date:</strong> 23.10.2024</p>
+                    <p><strong>Venue:</strong> Singaperumal Koil Streets</p>
+                    <p><strong>Professional body:</strong> Unnath Bharath Abhiyan</p>
+                    <p><strong>Duration:</strong> 9.00 AM to 1.00 PM</p>
+                    <p><strong>Conveners:</strong></p>
+                    <ul>
+                        <li>Dr. T. Lakshmnan, Professor, NSS Programme Advisor, SRMIST, KTR</li>
+                        <li>Dr. T. Y. J. Naga Malleswari, Associate Professor, NWC</li>
+                        <li>Dr. S. Ushasukhanya, Associate Professor, NWC</li>
+                    </ul>
+                    <div class="image-gallery">
+                        <img src="7a.png" alt="Survey Image 1">
+                        <img src="7b.png" alt="Survey Image 2">
+                        <img src="7x.png" alt="Survey Image 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">Organic Waste Management Through Vermicomposting</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>An outreach activity on ‘Organic Waste Management through Vermicomposting’ was organized on 8th November 2024 by Dr. Naga Malleswari T Y J and Dr. Ushasukhanya S, faculty members from the Department of Networking and Communications, at the Urban Farm Center with the active participation of NSS students. The session aimed to educate students on the process and benefits of vermicomposting. Mrs. C. Kanimozhi, a faculty member from the Department of Agriculture, shared insights into innovative agricultural projects and explained the fundamentals of vermicomposting, including the role of essential nutrients and the importance of beneficial microorganisms. The discussion highlighted the benefits of vermicomposting, such as improved soil fertility, enhanced crop yields, and overall better plant growth, fostering a deeper understanding of sustainable waste management practices among the students.</p>
+                    <p><strong>Date:</strong> 08.11.2024</p>
+                    <p><strong>Venue:</strong> Urban Farm Center</p>
+                    <p><strong>Duration:</strong> 8.00 AM to 9.40 AM</p>
+                    <p><strong>Conveners:</strong></p>
+                    <ul>
+                        <li>Dr. T. Y. J. Naga Malleswari, Associate Professor, NWC, SRMIST</li>
+                        <li>Dr. S. Ushasukhanya, Associate Professor, NWC, SRMIST</li>
+                    </ul>
+                    <p><strong>Resource Person:</strong></p>
+                    <ul>
+                        <li>Dr. Kanimozhi, UFC Head, Department of Agricultural Science, SRMIST</li>
+                    </ul>
+                    <div class="image-gallery">
+                        <img src="8a.png" alt="Vermicomposting Image 1">
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="container">
+            <div class="header">Road Safety - Helmet Awareness</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>An outreach activity on ‘Road Safety - Helmet Awareness’ was organized by Dr. Naga Malleswari T Y J and Dr. Ushasukhanya S, faculty members from the Department of Networking and Communications at SRM Institute of Science and Technology (SRMIST). As part of this initiative, a rally on “Road Safety - Helmet Awareness” was conducted on 18th November 2024, with enthusiastic participation from NSS students. The rally began at Ganesh Temple and proceeded to the Medical College, spreading awareness about the importance of wearing helmets and adhering to road safety guidelines. This activity served as an educational platform for students, emphasizing the critical role of helmets in preventing injuries and promoting responsible behavior on the roads.</p>
+                    <p><strong>Date:</strong> 18.11.2024</p>
+                    <p><strong>Venue:</strong> Rally at SRMIST, KTR</p>
+                    <p><strong>Duration:</strong> 8.00 AM to 9.40 AM</p>
+                    <p><strong>Conveners:</strong></p>
+                    <ul>
+                        <li>Dr. T. Y. J. Naga Malleswari, Associate Professor, NWC, SRMIST</li>
+                        <li>Dr. S. Ushasukhanya, Associate Professor, NWC, SRMIST</li>
+                    </ul>
+                    <div class="image-gallery">
+                        <img src="9a.png" alt="Road Safety Awareness Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header">Gender Equality</div>
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h2>Event Summary</h2>
+                        <p>An outreach activity focusing on ‘Gender Equality’ was organized by Dr. Naga Malleswari T Y J and Dr. Ushasukhanya S, faculty members from the Department of Networking and Communications, in collaboration with the Department of ECE at SRM Institute of Science and Technology (SRMIST). As part of the initiative, a rally on “Gender Equality” was conducted on 25th November 2024, with the active participation of NSS students. The rally commenced at the Tech Park, proceeded to the Medical College, continued to the University Building, and concluded back at the Tech Park. This event provided an opportunity for students to gain valuable insights into the importance of gender equality and foster awareness about this crucial social issue.</p>
+                        <p><strong>Date:</strong> 25.11.2024</p>
+                        <p><strong>Venue:</strong> Rally at SRMIST, KTR</p>
+                        <p><strong>Duration:</strong> 8.00 AM to 9.40 AM</p>
+                        <p><strong>Conveners:</strong></p>
+                        <ul>
+                            <li>Dr. T. Y. J. Naga Malleswari, Associate Professor, NWC, SRMIST</li>
+                            <li>Dr. S. Ushasukhanya, Associate Professor, NWC, SRMIST</li>
+                        </ul>
+                        <div class="image-gallery">
+                            <img src="10a.png" alt="Gender Equality Awareness Image 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="header">Mindful Living: Psychology for a Purposeful Life</div>
+                    <div class="profile-section">
+                        <div class="profile-info">
+                            <h2>Event Summary</h2>
+                            <p>The primary objective of the counselling cell event ‘Mindful Living: Psychology for a Purposeful Life’ is to incorporate mindfulness techniques to lower stress levels and enhance both mental and physical health. By developing mindfulness, participants learn to manage and reduce stress levels through awareness of the present moment, breaking habitual stress reactions.</p>
+                            <p><strong>Date:</strong> 22.10.2024</p>
+                            <p><strong>Duration:</strong> 10:00 AM</p>
+                            <p><strong>Convener:</strong></p>
+                            <ul>
+                                <li>Dr. P. Supraja, Associate Professor, NWC</li>
+                                <li>Dr. A. Arun, Assistant Professor, NWC</li>
+                                <li>Dr. R. Lakshmi Narayanan, Assistant Professor, NWC</li>
+                            </ul>
+                            <p><strong>Coordinators:</strong></p>
+                            <ul>
+                                <li>Dr. V. M. Gayathri, Associate Professor, NWC</li>
+                                <li>Dr. A. Helen Victoria, Associate Professor, NWC</li>
+                                <li>Dr. Vaishnavi Moorthy, Assistant Professor, NWC</li>
+                            </ul>
+                            <p><strong>Resource Person:</strong></p>
+                            <ul>
+                                <li>Dr. Ragidha Radhakrishnan, HOD Psychology, Dr. M.G.R Janaki College, Chennai</li>
+                            </ul>
+                            <div class="image-gallery">
+                                <img src="11a.png" alt="Mindful Living Event Image 1">
+                            </div>
+     </div>
+    </div>
+    <div class="container">
+        <div class="header">Workshop on Industry Professional Elective Course 21CSE315P: Data Orchestration and Management in Cloud Ecosystems</div>
+        <div class="profile-section">
+            <div class="profile-info">
+                <h2>Event Summary</h2>
+                <p>The workshop on the Industry Professional Elective Course 21CSE315P: Data Orchestration and Management in Cloud Ecosystems aimed to equip participants with practical expertise in managing and orchestrating data within cloud environments. The session provided hands-on experience with key tools such as Hadoop, Apache Spark, and AWS services, empowering students to effectively process, analyze, and manage large-scale data in the cloud. Participants gained valuable insights and skills to handle complex data operations and optimize performance in cloud ecosystems.</p>
+                <p><strong>Date:</strong> 25.09.2024 to 01.10.2024</p>
+                <p><strong>Duration:</strong> 6 days</p>
+                <p><strong>Convener:</strong> Dr. S. Prabakaran, Associate Professor, NWC</p>
+                <p><strong>Resource Person:</strong> Mr. S. B. Gowtham, Data Engineer at PayPal</p>
+                <div class="image-gallery">
+                    <img src="12a.png" alt="Cloud Workshop Image 1">
+                    <img src="12b.png" alt="Cloud Workshop Image 2">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">Kodekshetra - Coding Standard as per the Industry Requirement</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>The ‘Kodekshetra’ coding standards workshop concluded successfully, leaving participants equipped with practical knowledge of industry-standard practices. Through a mix of lectures and hands-on exercises, attendees gained insights into essential coding conventions and best practices that enhance code readability, maintainability, and collaboration within development teams. The workshop covered various language-specific standards, including PEP 8 for Python and Google’s guidelines for C++, alongside tools like linters and code formatters that automate adherence to these standards. Feedback from participants highlighted an appreciation for the interactive approach and real-world examples, which helped them better understand the impact of coding standards on project quality and team efficiency. Overall, the event was a valuable step toward fostering a culture of code quality and consistency.</p>
+                    <p><strong>Date:</strong> 07.10.2024</p>
+                    <p><strong>Venue:</strong> Online</p>
+                    <p><strong>Duration:</strong> 10 AM to 12 PM</p>
+                    <p><strong>Conveners:</strong> <br>Dr. Lakshmi M, Professor & Head NWC <br>
+                        <p>Co-Conveners:Dr. Venkatesh K <br> Associate Professor Nwc<br><br>Dr.Sujatha G <br> Associate Professor,Nwc</p>
+                    <div class="image-gallery">
+                        <img src="13a.png" alt="Kodekshetra Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header">Two days’ Workshop on Unity and Unreal Engine</div>
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h2>Event Summary</h2>
+                        <p>The two-day workshop on ‘Unity and Unreal Engine’ introduced the Deep Learning in Gaming and Application, participants to the gaming platforms,<br> a powerful tool for creating 2D and 3D games. It covered essential features like asset management, scripting, and user interface design,<br> helping attendees build interactive game experiences. The sessions were hands-on, allowing students to develop their own game prototypes. Unity’s robust<br> developer community, ease of use, multi-platform compatibility, and robust development tools have made it an excellent choice for game production. Its<br> affordability, compatibility for virtual reality, and AR make it a popular option for game makers. Among the many improvements and new features in Unreal<br> Engine 5 are Lumen, a dynamic global illumination and reflection system that uses both hardware-accelerated ray tracing and software, and Nanite, a <br>system that automatically modifies the meshes’ degree of detail.</p>
+                        <p><strong>Date:</strong> 8.10.2024 and 9.10.2024</p>
+                        <p><strong>Duration:</strong> 2 days</p>
+                        <p><strong>Conveners:</strong> Dr. K. Arthi, Associate Professor, DSBS, SRMIST; Dr. K. Deepa Thilak, Associate Professor,<br> NWC, SRMIST; Dr. K. Kalaiselvi, Associate Professor, NWC, SRMIST</p>
+                        <p><strong>Resource Person:</strong> Mr. Ashokkumar Manisekaran, Founder, Praya Labs</p>
+                        <div class="image-gallery" style="display: flex; width: 50%; overflow-x: scroll;">
+                            <img src="14b.png" alt="Unity and Unreal Workshop Image 2" style="width: auto;">
+                            <img src="new.jpg" alt="new">
+                        </div>
+                    </div>
+        </div>
+        <div class="container">
+            <div class="header">Ayudha Pooja Celebration 2024</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>On 10th October 2024, the Department of Networking and Communications at SRM Institute of Science and Technology organized a vibrant Ayudha Pooja celebration. The event was held in TP414 & TP415 of the Tech Park Building and started at 3:00 PM. Ayudha Pooja is a traditional ritual that honors tools, instruments, and knowledge, signifying gratitude for their role in our success and well-being. Faculty, staff, and students actively participated in the event, where prayers were offered to Goddess Saraswati, the symbol of wisdom and learning, to seek blessings for a successful academic and professional journey. The atmosphere was a spiritual connection, cultural pride, and community bonding. The pooja was followed by distributing prasadam to all attendees, further enhancing the sense of togetherness. The event successfully blended tradition with modern academic life, providing a moment of reflection and gratitude. It left participants with renewed purpose and energy as they continued their academic pursuits.</p>
+                    <p><strong>Date:</strong> 10.10.2024</p>
+                    <p><strong>Time:</strong> 3:00 PM</p>
+                    <p><strong>Conveners:</strong> Dr. Nimala K, Associate Professor, NWC; Dr. Arun A, Assistant Professor, NWC</p>
+                    <p><strong>Festive Guest:</strong> Dr. M. Pushpalatha, Associate Chairperson, CTech; Dr. S. Niranjana, Professor & Head, CTech</p>
+                    <div class="image-gallery" style="overflow-x: scroll;">
+                        <img src="15a.png" alt="Ayudha Pooja Celebration Image 1">
+                        <img src="god.jpg" alt="mata">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header">How to Live A Stress-Free Life?</div>
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h2>Event Summary</h2>
+                        <p>The “Stress-Free Living Workshop” was held on October 22, 2024, at the TP405 Techpark Building, SRM Institute of Science and Technology. The event aimed to educate participants on managing stress through a combination of informative lectures and interactive activities. The session began with a lecture discussing the nature of stress and effective management techniques, such as mindfulness and healthy lifestyle choices. Participants then engaged in a creative painting activity, which encouraged emotional expression in a relaxing environment. The workshop culminated in a balloon game, where attendees wrote their stressors on balloons and burst them together, symbolizing the release of their worries. Overall, the workshop provided valuable insights into stress management while fostering a supportive community atmosphere, leaving participants feeling empowered and connected.</p>
+                        <p><strong>Date:</strong> 22.10.2024</p>
+                        <p><strong>Conveners:</strong> Dr. Nimala K, Associate Professor, NWC; Dr. Arun A, Assistant Professor, NWC</p>
+                        <p><strong>Resource Person:</strong> Dr. Ragitha Radhakrishnan, HoD, Psychology, Dr. MGR Janaki College</p>
+                        <div class="image-gallery">
+                            <img src="16a.png" alt="Stress-Free Workshop Image 1">
+                            <img src="16b.png" alt="Stress-Free Workshop Image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="header">Study Abroad Programme</div>
+                    <div class="profile-section">
+                        <div class="profile-info">
+                            <h2>Event Summary</h2>
+                            <p>The seminar ‘Study Abroad Programme’ provided students with in-depth insights into key exams like GRE, GMAT, IELTS, PTE, and TOEFL, as well as the study abroad admissions process and global opportunities. Participants were guided through every stage of the study abroad journey, with detailed information on country-specific requirements, exam criteria, and course options tailored to their educational backgrounds. The seminar also addressed job assistance available post-graduation, ensuring students were equipped to make informed decisions that would enhance their career growth and future prospects.</p>
+                            <p><strong>Date:</strong> 04.11.2024</p>
+                            <p><strong>Time:</strong> 11:00 AM to 12:30 PM</p>
+                            <p><strong>Conveners:</strong> Dr. C. N. S. Vinoth Kumar, Associate Professor, NWC</p>
+                            <p><strong>Co-Conveners:</strong> Dr. A. Vijay Vasanth, Assistant Professor, NWC; Dr. B. Balakiruthiga, Assistant Professor, NWC</p>
+                            <p><strong>Resource Person:</strong> Mr. H. Abdul Navas, Business Development Manager, Osprey Academy</p>
+                            <div class="image-gallery">
+                                <img src="17a.png" alt="Study Abroad Seminar Image 1">
+                            </div>
+                  </div>
+            </div>
+            <div class="container">
+                <div class="header">AIoT Project Expo Event</div>
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h2>Event Summary</h2>
+                        <p>The Project Expo was successfully held on November 5, 2024, at 3:00 PM in TP 413, Intel Unnati IoT Solutions Lab. Students enthusiastically presented their projects, showcasing detailed posters, functional prototypes, and live demonstrations on their laptops. The projects were evaluated by Dr. M. Lakshmi, Professor and Head – NWC, and Dr. M. Thenmozhi, Professor – NWC, who provided insightful feedback and valuable suggestions to help students refine their ideas and explore pathways toward product commercialization. The event concluded with the announcement of the winners, followed by the distribution of certificates, celebrating the hard work and innovation of all participants.</p>
+                        <p><strong>Date:</strong> 05.11.2024</p>
+                        <p><strong>Time:</strong> 3:00 PM to 5:00 PM</p>
+                        <p><strong>Conveners:</strong> Dr. M. Lakshmi, Professor & Head, NWC, SRMIST</p>
+                        <p><strong>Coordinators:</strong> Dr. T. Y. J. Naga Malleswari, Associate Professor, NWC, SRMIST; Dr. S. Ushasukhanya, Associate Professor, NWC, SRMIST</p>
+                        <p><strong>Chief Guest:</strong> Dr. Revathi Venkataraman, Professor & Chairperson, School of Computing, SRMIST</p>
+                        <div class="image-gallery">
+                            <img src="18a.png" alt="AIoT Project Expo Image 1">
+                        </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="header">SERBOT Tech Expo</div>
+        <div class="profile-section">
+            <div class="profile-info">
+                <h2>Event Summary</h2>
+                <p>The Serbot Tech Expo, organized under the course Serbot: Project-Based Learning in Robotics, was a dynamic event highlighting innovative student projects. Students presented hands-on robotics and automation solutions, showcasing their creativity, technical skills, and teamwork. The event drew significant participation from academia and industry, fostering valuable interactions and insights. Attendees explored a range of applications, from AI-driven systems to advanced automation prototypes. The expo successfully bridged academic learning with industry relevance, inspiring further exploration in the field of robotics and automation.</p>
+                <p><strong>Date:</strong> 06.11.2024</p>
+                <p><strong>Conveners and Co-Conveners:</strong> Dr. M. Lakshmi, Professor & Head, NWC; Dr. Annapurani K, Professor, NWC; Dr. A. Suresh, Associate Professor, NWC</p>
+                <p><strong>Coordinators:</strong> Dr. R. Kayalvizhi, Associate Professor, NWC; Dr. K. A. Varunkumar, Assistant Professor, NWC</p>
+                <p><strong>Resource Person:</strong> Dr. V. Mohanraj, Senior Data Engineer, Standard Chartered</p>
+                <div class="image-gallery">
+                    <img src="19a.png" alt="Serbot Tech Expo Image 1">
+                    <img src="19b.png" alt="Serbot Tech Expo Image 2">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">Cyber Bullying among Indian Youth and Protecting Their Mobile Devices</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>The workshop on Cyberbullying among Indian Youth and Protecting Their Mobile Devices aimed to raise awareness and provide practical solutions for addressing the growing issue of cyberbullying. Participants gained a deeper understanding of the prevalence of cyberbullying and its emotional, social, and academic impacts on youth. They were introduced to essential digital literacy skills, including how to secure mobile devices through privacy settings, strong passwords, and anti-cyberbullying apps.</p>
+                    <p>The workshop also educated attendees on effective reporting mechanisms, empowering youth to identify and report cyberbullying incidents. It fostered a sense of community by encouraging open discussions and peer support networks to combat bullying. Parental insights were provided into monitoring online activity and offering balanced support to children. Additionally, the workshop highlighted the importance of policy advocacy, calling for stricter regulations and school policies to address cyberbullying. Overall, participants left with actionable steps to create a safer, more respectful online environment, ensuring a lasting impact on both individuals and communities.</p>
+                    <p><strong>Date:</strong> 07.11.2024</p>
+                    <p><strong>Time:</strong> 10:30 AM to 12:30 PM</p>
+                    <p><strong>Conveners and Co-Conveners:</strong> Dr. M. Lakshmi, Professor & Head, NWC, SRMIST; Dr. M. B. Mukesh Krishnan, Professor, NWC, SRMIST</p>
+                    <p><strong>Coordinators:</strong> Dr. K. A. Varunkumar, Assistant Professor, NWC</p>
+                    <p><strong>Professional Body:</strong> Ministry of Home Affair’s initiative Cyber Jagrukta Divas</p>
+                    <p><strong>Resource Person:</strong> Dr. Madhulika Sahoo, Director – Student Welfare and Placement, Kalahandi University, Government of Odisha</p>
+                    <div class="image-gallery">
+                        <img src="20a.png" alt="Cyber Bullying Workshop Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header">Project Expo-Deep Learning in Gaming and Applications</div>
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h2>Event Summary</h2>
+                        <p>The event showcased the cutting-edge applications of deep learning in the gaming industry, highlighting how AI is revolutionizing game development. Presentations covered topics like NPC behavior modeling, dynamic content generation, and real-time player adaptation. The experts shared insights into how deep learning can create more immersive, personalized gaming experiences.</p>
+                        <p>Attendees explored the role of neural networks in designing smarter game mechanics and dynamic environments. The expo also demonstrated how AI can improve game performance, making it more responsive to player actions. Keynote speakers discussed future trends, including the potential of reinforcement learning in gameplay optimization. Developers presented real-world case studies on the implementation of AI in both game design and player interactions. Overall, the event emphasized the transformative impact of deep learning technologies on the future of gaming.</p>
+                        <p><strong>Date:</strong> 08.11.2024</p>
+                        <p><strong>Conveners:</strong> Dr. Annapurani Panaiyappan. K, Professor, NWC; Dr. K. Arthi, Associate Professor, DSBS</p>
+                        <p><strong>Resource Person:</strong> Dr. Bhasi Sukumaran, Professor & Head of the Department, Clinical Psychology, SRM Hospitals</p>
+                        <div class="image-gallery">
+                            <img src="21a.png" alt="Deep Learning Expo Image 1">
+                        </div>
+                    </div>
+        </div>
+        <div class="container">
+            <div class="header">Semicolon 10.0</div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h2>Event Summary</h2>
+                    <p>The Hackathon ‘Semicolon 10.0’ provided a dynamic platform for participants to showcase their technical skills, creativity, and teamwork while developing innovative solutions within a set timeframe. The event fostered an atmosphere of learning, healthy competition, and collaboration, motivating participants to challenge their limits and think outside the box.</p>
+                    <p>It concluded with the recognition of outstanding performers, celebrating their achievements and inspiring a spirit of innovation and community among all participants. The hackathon not only highlighted technical excellence but also reinforced the importance of teamwork and creative problem-solving.</p>
+                    <p><strong>Date:</strong> 11.11.2024</p>
+                    <p><strong>Convener:</strong> Dr. M. Lakshmi, Professor & Head, NWC</p>
+                    <p><strong>Co-Conveners:</strong> Dr. M. Safa, Assistant Professor, NWC; Dr. G. Saranya, Assistant Professor, NWC; Dr. K. Meenakshi, Assistant Professor, NWC; Dr. S. Murugaanandam, Associate Professor, NWC</p>
+                    <p><strong>Resource Person:</strong> Mr. K. Ramesh, IIC Convener, Directorate of Entrepreneurship & Innovation (DEI)</p>
+                    <div class="image-gallery">
+                        <img src="22a.png" alt="Semicolon Hackathon Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header">Workshop on Malware Analysis</div>
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h2>Event Summary</h2>
+                        <p>The Malware Analysis Workshop provided participants with hands-on experience in detecting, analyzing, and mitigating malicious software. Held at the IoT Lab Tech Park 1 (4th Floor), the session covered key topics like reverse engineering, behavioral analysis, and threat detection using industry-standard tools such as debuggers, disassemblers, and sandbox environments.</p>
+                        <p>Participants analyzed real-world malware samples, gaining practical skills to identify and mitigate cyber threats. The workshop successfully equipped attendees with the knowledge and tools needed to enhance their cybersecurity expertise and tackle real-world challenges effectively.</p>
+                        <p><strong>Date:</strong> 11.11.2024 to 12.11.2024</p>
+                        <p><strong>Conveners:</strong> Dr. M. Lakshmi, Professor & Head, NWC, SRMIST; Dr. M.B.Mukesh Krishnan, Professor, NWC, SRMIST</p>
+                        <p><strong>Coordinators:</strong> Dr. M. Sundarrajan, Assistant Professor, NWC; Dr. T. Balachander, Assistant Professor, NWC; Dr. G. Sujatha, Assistant Professor, NWC; Dr. V. Joseph Raymond, Assistant Professor, NWC; Dr. R. Lakshminarayanan, Assistant Professor, NWC</p>
+                        <p><strong>Resource Person:</strong> Mr. S. Dayanandhan, Accenture Solution Pvt Ltd, Coimbatore.</p>
+                        <div class="image-gallery">
+                            <img src="23aa.png" alt="Malware Analysis Workshop Image 1">
+                        </div>
+                    </div>
+            </div>
+            <div class="container">
+                <div class="header">Project Expo for Computer Organization and Architecture</div>
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <h2>Event Summary</h2>
+                        <p>The School of Computing organized a Project Expo on 14th November 2024 for the subject 21CSS201T - Computer Organization and Architecture, a core subject common to all departments within the school. With a total of 89 sections across various departments, students first presented their projects at the departmental level, where the best teams were selected for the final exhibition.</p>
+                        <p>After rigorous evaluation, 36 teams were chosen to showcase their innovative projects at the Project Expo. This event provided students with a platform to demonstrate their technical skills and creativity, and it witnessed active participation from students who exhibited their understanding of computer architecture and organization through practical applications.</p>
+                        <p>The expo not only highlighted the students’ efforts but also encouraged a spirit of innovation and collaborative learning.</p>
+                        <p><strong>Date:</strong> 14.11.2024</p>
+                        <p><strong>Convener:</strong> Dr. M. Lakshmi, Professor & Head, NWC</p>
+                        <p><strong>Co-Conveners:</strong> Dr. C. Malathy, Professor, NWC; Dr. N. Senthamarai, Assistant Professor, NWC</p>
+                        <p><strong>Resource Persons:</strong> Mr. Prem Sasi Kumar, Senior Associate, PWC; Mr. Sarathy Ranganathan, Senior Software Developer, Accenture</p>
+                        <div class="image-gallery">
+                            <img src="24a.png" alt="Project Expo Image 1">
+                            <img src="24b.png" alt="Project Expo Image 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="header">Skill Building Programme for Non-teaching Staff Members</div>
+                    <div class="profile-section">
+                        <div class="profile-info">
+                            <h2>Date :   16.12.204 and 17.12.2024  </h2>
+                            <p><b>Convener: </b>
+                                Dr. L.N.B. Srinivas, Associate Professor, NWC
+                                 Dr. R.Lakshminarayanan, Associate Professor, 
+                                NWC
+                                 Dr. V.Nallarasan, Assistant Professor, NWC
+                                 Mr. V.Arumugam, Senior System Administrator
+                                 <br>
+                                <b>Resource Person: </b> 
+                                  
+Dr. B. Yamini, Associate Professor, NWC
+ Dr. P. Savaridassan, Assistant Professor, NWC
+ Mr. N. Murugan, Programmer, NWC
+ Mr. D. Mohanraj, Programmer, NWC
+                                </p>
+                            <p> Event Summary :
+                                Resource Person:  
+                               Dr. B. Yamini, Associate Professor, NWC
+                                Dr. P. Savaridassan, Assistant Professor, NWC
+                                Mr. N. Murugan, Programmer, NWC
+                                Mr. D. Mohanraj, Programmer, NWC
+                                The Two-Day Skill-Building Training 
+                               Programme was successfully 
+                               inaugurated on December 16, 2024, 
+                               at 9:30 AM. The Convener warmly 
+                               welcomed the participants and 
+                               provided an overview of the topics 
+                               to be covered over the two days. The 
+                               programme was officially inaugurated 
+                               by Dr. M. Lakshmi, Professor and Head of 
+                               the NWC Department, who encouraged 
+                               participants to actively engage 
+                               and make the most of this learning 
+                               opportunity. Designed to enhance 
+                               professional productivity, the training 
+                               focused on practical applications 
+                               of essential digital tools, including 
+                               Adobe Photoshop, MS Excel, and MS 
+                               PowerPoint. The sessions catered to all proficiency levels, guiding participants from beginner to 
+                               advanced techniques. The programme concluded with a valedictory session on December 17, 2024, 
+                               at 4:00 PM, where the Convener delivered the vote of thanks, appreciating the active participation 
+                               and enthusiasm of all attendees</p>
+                            <div class="image-gallery">
+                                <img src="1ab.jpg" alt="Project Expo Image 1">
+                                <img src="1abc.jpg" alt="Project Expo Image 2">
+                                
+                            </div>
+                        </div>
+                    </div>
+    </div>
+    <script src="nwc.js"></script>
+</body>
+</html>
