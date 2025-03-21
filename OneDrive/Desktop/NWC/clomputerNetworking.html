@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          margin-left: 100px;
+            width: 100%;
+        }
+        .main-container {
+            justify-content: center;
+            gap: 20px;
+            max-width: 100%;
+            margin-left: 200px;
+        }
+        .container {
+            margin-left: -300px;
+            justify-content: center;
+            width: 1000px;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .specialization-labs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specialization-labs li {
+            background: #a3cfff;
+            color: rgb(0, 0, 0);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body style="text-align: justify;">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center; ">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+   
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+    
+    <div class="main-container">
+        <div class="container">
+            <h1>Computer Networking Specialization</h1>
+            <h2>Specialization Summary</h2>
+            <p>The Networking Specialization under the Specialized
+                Research Group (SRG) at SRM Institute of Science and
+                Technology (SRM IST) focuses on next-generation
+                network architectures, cybersecurity, and intelligent
+                networking solutions. The program covers SoftwareDefined Networking (SDN), Network Function
+                Virtualization (NFV), 5G, IoT security, and AI-driven
+                networking. It integrates theoretical foundations
+                with hands-on training through advanced laboratory
+                facilities.</p>
+                <div style="   border-radius: 10px; padding: 32px; margin-bottom: 32px;"> 
+                    <h1 style="font-size: 24px; font-weight: bold; color: #7B241C;">Faculty Members</h1> 
+                    <div style="background-color: white; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border-radius: 10px; padding: 32px; display: flex; justify-content: center; margin-top: 16px;"> 
+                        <div style="display: flex; flex-direction: column; margin-right: 32px;"> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. K.Venkatesh</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. P.Visalakshi</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. K.Deepa Thilak</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. Murugaanandam S</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. K.Kalaiselvi</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. J.Godwin Ponsam</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. Arun A</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. V.Rajaram</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Associate Professor, NWC, SRMIST.</p> 
+                        </div> 
+                        <div style="display: flex; flex-direction: column; margin-left: 56px;"> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. D.Saveetha</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. C.Fancy</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Mrs. G.Parimala</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. Praveena Akki</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. S.A.Angayarkanni</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. B.Balakiruthiga</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. M.Manickam</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                            <h2 style="font-size: 24px; font-weight: bold;">Dr. M.Sundarrajan</h2> 
+                            <p style="font-size: 20px; font-weight: 600;">Assistant Professor, NWC, SRMIST.</p> 
+                        </div> 
+                    </div> 
+                </div>
+                <div style="background-color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 32px; margin-top: 24px;">
+                    <h2 style="font-size: 1.875rem; color: #b7791f; font-weight: bold; margin-bottom: 16px;">CISCO Center of Excellence (CoE)</h2>
+                    <p style="color: #1a202c; font-size: 1.25rem; margin-top: 16px; line-height: 1.625;">
+                        CISCO CoE Networking lab setup in Department of NWC is state of art facility in demonstrating 
+Software Defined Access with all required hardware like CISCO Catalyst server(DNAC), Cisco Identity 
+Services Engine server (ISE), SDWAN Edge Routers, C9500 -Core switches, C9300 - Distribution 
+Switches, C9200 Access layer switches of traditional networking. This lab is supported with Umbrella 
+Security cloud licenses along with Meraki solutions for IoT - enterprise applications. Any student 
+having hands on exposure with this setup will be most skilled networking engineer and will be the 
+choice of the industry
+                    </p>
+                </div>
+                <div style="background-color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 32px; margin-top: 24px;">
+                    <h2 style="font-size: 1.875rem; color: #b7791f; font-weight: bold; margin-bottom: 16px;">Memorandum of Understanding (MoU)</h2>
+                    <p style="color: #1a202c; font-size: 1.25rem; margin-top: 16px; line-height: 1.625;">
+                        The MoUs signed in the Specialization of Computer Networks (CN) are BOODSKAP Pvt. Ltd. (2023) 
+and Orangewood Automation Pvt. Ltd. (2024). The BOODSKAP MoU, spanning three years, has 
+led to various industry-academic engagements such as an IoT farm visit (2018), recruitment and 
+training (2019), IoT Center of Excellence judging (2020), company visits, tech talks (2022), and 
+a device purchase initiative (2023). The Orangewood Labs MoU, signed for five years, focuses 
+on hackathons, internships, placements, value-added courses, collaborative projects, and 
+sponsored research. These collaborations provide students with practical learning, research 
+opportunities, and career growth in the field of Computer Networks and IoT
+                    </p>
+                </div>
+                
+            <h2>Activity Highlights</h2>
+            <h3>Empowering Faculty with Advanced Training</h3>
+            <p>The Department of Networking and Communications
+                successfully conducted multiple training sessions
+                as part of the Computer Networking Specialization,
+                ensuring faculty members stay updated with the
+                latest technological advancements.</p>
+            <h2>Training Sessions Overview</h2>
+            <h3>21CSE321J Training</h3>
+            <p>Duration: 10 days (July 2024)</p>
+            <p>Key Focus: Enhancing foundational knowledge in computer networking.</p>
+            <h2>Highlights:</h2>
+            <div class="specialization-labs">
+                <ul>
+                    <li>Covered OSI and TCP/IP models.</li>
+                    <li>Hands-on lab exercises for network topologies.</li>
+                    <li>Explored network security fundamentals.</li>
+                    <li>Interactive sessions on Packet Tracer.</li>
+                </ul>
+            </div>
+            <h3>Outcome:</h3>
+            <p>: Faculty gained a strong understanding of
+                networking principles, preparing them for advanced
+                courses and industry certifications.</p>
+                <h1>Cisco SD-WAN Operations and Deployment (SDWFND) 2.0</h1>
+                <p>Date: 1st Oct - 4th Oct 2024 (3 days)</p>
+                <p>Key Focus: Software-Defined WAN (SD-WAN) architecture and implementation.</p>
+                <h2>Highlights:</h2>
+                <div class="specialization-labs">
+                    <ul>
+                        <li>Introduction to SD-WAN
+                            fundamentals and advantages over
+                            traditional WAN.</li>
+                        <li>Practical implementation of
+                            Cisco vManage, vBond, and vSmart
+                            controllers.</li>
+                        <li>Network security measures and
+                            traffic optimization using SD-WAN
+                            policies.</li>
+                        <li>Real-world use cases and best
+                            practices for enterprise SD-WAN
+                            deployment.</li>
+                    </ul>
+                    <img src="pic/sd.png">
+                </div>
+                <h3>Outcome:</h3>
+                <p>Faculty acquired hands-on expertise in SD-WAN operations, enabling them to train
+                    students in emerging networking trends.</p>
+                    <h1>Engineering Cisco Meraki Solutions Part 2 (ECMS2) 2.0</h1>
+                    <p>Date: 28th Oct - 30th Oct 2024 (3 days)</p>
+                    <p>Key Focus: Cloud-managed network solutions and
+                        Cisco Meraki configurations.</p>
+                    <h2>Highlights:</h2>
+                    <div class="specialization-labs">
+                        <ul>
+                            <li>Advanced deployment of Cisco Meraki
+                                security, wireless, and switching solutions.</li>
+                            <li>In-depth exploration of dashboard automation
+                                and API integrations</li>
+                            <li> Network performance monitoring and
+                                troubleshooting using Meraki insights</li>
+                            <li>Hands-on implementation of zero-touch
+                                provisioning for large-scale networks.</li>
+                        </ul>
+                    </div>
+                    <h3>Outcome:</h3>
+                    <p>Faculty developed expertise in cloudbased networking, preparing them to guide
+                        students in modern IT infrastructures.</p>
+                        <h1>Transforming to a Cisco Intent-Based Network (IBNTRN) 1.1</h1>
+                        <p>Date:  9th Dec - 13th Dec 2024 (5 days)</p>
+                        <p>Key Focus: Leveraging AI-driven networking for
+                            automation and optimization.</p>
+                        <h2>Highlights:</h2>
+                        <div class="specialization-labs">
+                            <ul>
+                                <li>Understanding the transition from traditional
+                                    to intent-based networking.</li>
+                                <li>AI-driven network automation for predictive
+                                    analytics and fault detection.</li>
+                                <li> Policy-based networking to streamline
+                                    enterprise connectivity.</li>
+                                <li>Integration of security and compliance
+                                    measures into automated networks.</li>
+                            </ul>
+                        </div>
+                        <h3>Outcome:</h3>
+                        <p>Faculty gained insights into nextgeneration networking solutions, equipping
+                            them to incorporate AI-driven methodologies in
+                            academia.</p>
+                            <h1>Implementing Cisco SD-WAN Solutions (ENSDWI) 3.0</h1>
+                            <p>Date: 16th Dec - 20th Dec 2024 (5 days)</p>
+                            <p>Key Focus: Advanced SD-WAN deployment and management strategies.</p>
+                            <h2>Highlights:</h2>
+                            <div class="specialization-labs">
+                                <ul>
+                                    <li>Comprehensive understanding of SD-WAN architecture, features, and components.</li>
+                                    <li>Deep dive into edge connectivity, VPNs, and secure segmentation.</li>
+                                    <li> Configuration and optimization of
+                                        application-aware routing policies.</li>
+                                    <li>Implementing redundancy, failover,
+                                        and disaster recovery strategies.</li>
+                                </ul>
+                            </div>
+                            <h3>Outcome:</h3>
+                            <p>Faculty enhanced their
+                                expertise in SD-WAN, enabling them to
+                                lead industry-aligned networking courses
+                                and research</p>
+                                <img src="pic/err.png">
+                                <h3>Impact & Future Initiatives:</h3>
+                                <p>These
+                                    training programs have significantly
+                                    enhanced faculty expertise in modern
+                                    networking solutions. The department
+                                    is committed to continuous professional
+                                    development and looks forward to introducing new certifications, workshops, and industry collaborations in
+                                    2025 to further bridge the gap between academia and industry advancements.</p>
+        </div>
+        <script src="nwc.js"></script>
+</body>
+</html>

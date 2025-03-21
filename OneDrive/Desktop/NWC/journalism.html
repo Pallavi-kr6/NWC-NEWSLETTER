@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journals Publication</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6 flex flex-col text-justify">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center;">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-center mb-6">JOURNALS PUBLICATION</h1>
+        <p class="text-gray-700 text-center mb-4">Our department is proud to showcase the significant contributions of our faculty and researchers. The following articles highlight their cutting-edge research, published in reputed journals worldwide.</p>
+        
+        <div class="space-y-6">
+            <!-- Journal Entries -->
+            <div>
+                <h2 class="text-xl font-semibold">Mental Health and Monitoring Systems</h2>
+                <p class="text-gray-800 font-medium">A Survey of Autonomous Monitoring Systems in Mental Health</p>
+                <p class="text-gray-600">Authors: Abinaya Gopalakrishnan, Raj Gururajan, Xujuan Zhou, Revathi Venkataraman, Ka Ching Chan, Niall Higgins</p>
+                <p class="text-gray-600">Journal: Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery</p>
+                <p class="text-gray-600">ISSN: 1942-4787</p>
+            </div>
+             
+
+            <div>
+                <p class="text-gray-800 font-medium"> Detecting the Possession of Harmful Weapons 
+                    by Humans Through Surveillance Systems</p>
+                <p class="text-gray-600"> Authors: Nalini Manogaran, Suresh Annamalai, 
+                    Malarvizhi Nandagopal, Koteeswaran Seerangan, 
+Balamurugan Balusamy, Francesco Benedetto
+                </p>
+                <p class="text-gray-600"> Journal: SSRG International Journal of Electronics 
+                    and Communication Engineering</p>
+                <p class="text-gray-600">ISSN: 2348-8549</p>
+            </div>
+             
+            <!-- <div>
+                <h2 class="text-xl font-semibold"> Deep 
+                    Learning 
+                    Advancements
+                     and 
+                    Medical Advancements</h2>
+                <p class="text-gray-800 font-medium">Dilated U-Net Model Assisted Swin Patch Deep 
+                    Convolutional Network for Enhanced Cardiac 
+                    Arrhythmia Segmentation and Classification</p>
+                <p class="text-gray-600"> Jyothirmai Digumarth, Gayathri V M, 
+                    R. Pitchai</p>
+                <p class="text-gray-600"> Journal: Biomedical Signal Processing and 
+                    Contro</p>
+                <p class="text-gray-600">ISSN: 1746-8108</p>
+            </div>
+             
+            <div>
+    
+                <p class="text-gray-800 font-medium"> An Efficient Smart Container Design Using IoT 
+                    and Its Applications</p>
+                <p class="text-gray-600">Authors:K.M. Umamaheswari, A.M.J. Muthu 
+                    Kumaran, J. Shobana, J.D. Dorathi Jeyaseeli, K. 
+                    Sivashankari, SafaM</p>
+                <p class="text-gray-600">Journal: International Journal of System of 
+                    Systems Engineering</p>
+                <p class="text-gray-600">ISSN: 1748-068X</p>
+            </div> -->
+             
+
+
+
+
+
+
+
+            <div>
+                <h2 class="text-xl font-semibold">Deep Learning Advancements and Medical Advancements</h2>
+                <p class="text-gray-800 font-medium">Dilated U-Net Model Assisted Swin Patch Deep Convolutional Network for Enhanced Cardiac Arrhythmia Segmentation and Classification</p>
+                <p class="text-gray-600">Authors: Jyothirmai Digumarth, Gayathri V M, R. Pitchai</p>
+                <p class="text-gray-600">Journal: Biomedical Signal Processing and Control</p>
+                <p class="text-gray-600">ISSN: 1746-8108</p>
+            </div>
+
+            <div>
+               
+                <p class="text-gray-800 font-medium"> An Efficient Smart Container Design Using IoT 
+                    and Its Applications</p>
+                <p class="text-gray-600"> Authors: K.M. Umamaheswari, A.M.J. Muthu 
+                    Kumaran, J. Shobana, J.D. Dorathi Jeyaseeli, K. 
+                    Sivashankari, Safa M</p>
+                <p class="text-gray-600"> Journal: International Journal of System of 
+                    Systems Engineering</p>
+                <p class="text-gray-600">ISSN: 1748-068X</p>
+            </div>
+            <div>
+               
+                <p class="text-gray-800 font-medium"> Efficient Protection of Golden Nutri Cereal Using Enhanced Disease Identification and Hybrid 
+                    Split-Attention Mechanism</p>
+                <p class="text-gray-600"> Authors: A Divya, D Sungeetha, Dr. S Ramesh</p>
+                <p class="text-gray-600"> Journal: Multimedia Tools and Applications</p>
+                <p class="text-gray-600">ISSN: 1573-7721</p>
+            </div>
+
+              
+            <div>
+                <h2 class="text-xl font-semibold"> AI in Healthcare and IoT</h2>
+                <p class="text-gray-800 font-medium">Transforming Arabic Text Analysis: Integrating 
+                    Applied Linguistics with m-Polar Neutrosophic 
+                    Set for Mood Change and Depression on Social 
+                    Media</p>
+                <p class="text-gray-600"> Authors:M. Sivakumar, Abdul Rajak Rabıyathul 
+                    Basarıya, M. Senthil, Vetriselvi T, G. Raja, R. 
+                    Rajavarman</p>
+                <p class="text-gray-600"> Journal:International Journal of Neutrosophic 
+                    Science</p>
+                <p class="text-gray-600"> ISSN: 2690-6805w</p>
+            </div>
+            <div>
+               
+                <p class="text-gray-800 font-medium">  Integrated Internet Architecture and Protocol 
+                    Framework for Peer-to-Peer File Sharing in IoE</p>
+                <p class="text-gray-600">  Authors: Dr. M. Naga Raju, Dr. P. Balamurugan, 
+                    Dr. G.S. Nijaguna, Dr. K. Swarnalatha, P. 
+                    Lakshmiramana, Edupuganti Mounika
+                    <br>
+                     Journal: Journal of Internet Services and 
+                    Information Security
+                    <br>
+                     ISSN: 2182-2077</p>
+            </div>
+            <div>
+               
+                <p class="text-gray-800 font-medium">   Future Trends of AI-Based Modelling in the 
+                    Context of Smart Devices and Systems</p>
+                <p class="text-gray-600"> Authors: Dr. F. Jerald, Murugaanandam S, Senthil 
+                    Kumar Thillaigovindan, P Prasanna, M. Vimala
+                    <br>
+                     Journal: Nanotechnology Perceptions I
+                     <br>
+                     ISSN: 2235-2074</p>
+            </div>
+            <div>
+               
+                <p class="text-gray-800 font-medium">Lung Disease Prediction Using CT Images and 
+                    BI-LSTM Classification</p>
+                <p class="text-gray-600"> Authors: Padmini Sankaramurthy, Renukadevi 
+                    Palaniswamy, Suseela Sellamuthu, Fancy C, 
+                    Anand Murugadhas
+                    <br>
+                     Journal: NETWORK: Computation in Neural 
+                    Systems
+                    <br>
+                     ISSN: 1361-6536</p>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-semibold">Advanced Neural Networks and 
+                    Optimization</h2>
+                <p class="text-gray-800 font-medium"> Facial Emotion Recognition Using Hierarchical 
+                    Cascade Regression Neural Networks</p>
+                <p class="text-gray-600"> Authors: S. Subathradevi, Dr. T. Preethiya, 
+                    D. Santhi, G.R. Hemalakshmi
+                    <br>
+                     Journal: Journal of Circuits, Systems and 
+                    Computers
+                    <br>
+                     ISSN: 1793-6454</p>
+            </div>
+            <div>
+            
+                <p class="text-gray-800 font-medium"> Flameshift Protocol for Cross-Chain 
+                    Communications</p>
+                <p class="text-gray-600"> Authors: C. Vijayalakshmi, Metilda Florence S
+                    Journal: SN Computer Science
+                    ISSN: 2661-8907</p>
+            </div>
+            <div>
+            
+                <p class="text-gray-800 font-medium"> OPTIONS Attack Detection in WSN Using 
+                    Optimized Multi-Attention CNN</p>
+                <p class="text-gray-600">  Authors: Tamil Selvi S, Dr. P. Visalakshi, 
+                    Senthil Kumar M
+                    <br>
+                     Journal: Knowledge-Based Systems
+                     <br>
+                     ISSN: 0950-7051</p>
+            </div>
+            <div>
+            
+                <p class="text-gray-800 font-medium"> Hybrid Routing for Enhanced Security in UAV 
+                    Network</p>
+                <p class="text-gray-600"> Authors: Priyadharshini SP, Balamurugan P
+                    <br>
+                    Journal: Journal of Machine and Computing
+                    <br>
+                    ISSN: 2788-7669</p>
+            </div>
+            <div>
+            
+                <p class="text-gray-800 font-medium">  Enhancing Resource Management in IoT 
+                    Systems Using Deep Learning</p>
+                <p class="text-gray-600">  Authors: Vijayalakshmi V, Saravanan M
+                    <br>
+                    Journal: International Journal of Electricaland 
+                    <br>
+                   Computer Engineering
+                   <br>
+                   ISSN: 2088-8708</p>
+            </div>
+
+
+            <div>
+                <h2 class="text-xl font-semibold">Achieving Sustainable Agriculture with 
+                    Advanced Disease Prediction</h2>
+                <p class="text-gray-600 font-medium"> Authors: Deepa Rajasekar, Dr. Vaishnavi 
+                    Moorthy, Priscilla Rajadurai, Sethuraman 
+                    Ravikumar
+                    <br>
+                     Journal: Journal of the Science of Food and 
+                    Agriculture
+                    <br>
+                     ISSN: 1097-0010</p>
+            </div>
+           
+            <div>
+                <h2 class="text-xl font-semibold">Emerging Trends in Fault Detection</h2>
+                <p class="text-gray-900 font-medium"> Intelligent Fault Diagnosis in Industrial 
+                    Machinery Using AI</p>
+                <p class="text-gray-600 font-medium">Authors: Rupa Devi, Suseela G, Ranjith Kumar 
+                    Painam, Thammisetty Swetha, Suryanarayana G, 
+                    Reddy Madhavi K
+                    <br>
+                     Journal: Journal of Machine and Computing
+                     <br>
+                     ISSN: 2788-7669</p>
+            </div>
+            <div>
+                <p class="text-gray-900 font-medium"> PM2.5 Concentration Estimation with Bi-LSTM 
+                    Optimization</p>
+                <p class="text-gray-600 font-medium"> Authors: S. Saminathan, Dr. C. Malathy
+                    <br>
+                    Journal: Nature Environment and Pollution 
+                   Technology
+                   <br>
+                    ISSN: 2395-3454</p>
+            </div>
+            <div>
+                <p class="text-gray-900 font-medium"> An Efficient DDoS Detection Model in FANET 
+                    Sector</p>
+                <p class="text-gray-600 font-medium"> Authors: SP Priyadharshini, P Balamurugan
+                   <br>
+                    Journal: Applied Soft Computing
+                    <br>
+                    ISSN: 1568-4946</p>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-semibold">Blockchain and Cybersecurity 
+                    Advancements</h2>
+                <p class="text-gray-900 font-medium"> Adaptive Deep Conditional Random Field
+                    Based Blockchain Access for Data Privacy</p>
+                <p class="text-gray-600 font-medium"> Authors: Yedida Venkata Rama Subramanaya 
+                    Viswanadham, Annapurani Panaiyappan K
+                    <br>
+                     Journal: SN Computer Science
+                     <br>
+                     ISSN: 2661-8907</p>
+            </div>
+        </div>
+    </div>
+    <script src="nwc.js"></script>
+</body>
+</html>

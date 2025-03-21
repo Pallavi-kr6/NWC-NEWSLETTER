@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background-color: #f4f4f4;">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+
+    <div style="background-color: #004080; height: 10px;"></div>
+    <h2 style="color: #333;">Our Student's</h2>
+    <h1 style="color: #004080;">ACHIEVEMENTS</h1>
+
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px;">
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="imagess/13th.png" style="width: 100%; border-radius: 10px;">
+            <p><strong>3rd Prize, Bronze</strong><br>State level Archery competition</p>
+            <hr>
+            <p>YAZHINBAN SS - RA2411030010228</p>
+        </div>
+
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="imagess/14th.png" style="width: 100%; border-radius: 10px;">
+            <p><strong>2nd Place</strong><br>Hackathon (MAKE-ATHON)</p>
+            <hr>
+            <p>AVANTIKA R - RA2311030010040</p>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px;">
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="imagess/15th.png" style="width: 100%; border-radius: 10px;">
+            <p><strong>2nd Place</strong><br>Hackathon (MAKE-ATHON)</p>
+            <hr>
+            <p>HARISH RAJA - RA2311030010025</p>
+        </div>
+
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="imagess/16th.png" style="width: 100%; border-radius: 10px;">
+            <p><strong>1st PRIZE</strong><br>SEED HACKATHON</p>
+            <hr>
+            <p>ARUNANGSHU MOJUMDER RAATUL - RA2412023010032</p>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px;">
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="A.png" style="width: 100%; border-radius: 10px;">
+            <p><strong>1st PRIZE</strong><br>Fashion Parade 
+                Conducted by JD School of Design</p>
+            <hr>
+            <p>SOMIL NAYAK - RA2211032010082</p>
+        </div>
+
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="B.png" style="width: 100%; border-radius: 10px;">
+            <p><strong>2nd PRIZE</strong><br>BASKETBALL COMPETITION ACE 2024</p>
+            <hr>
+            <p>ROSHAN LAL YOGI - RA2411031010048</p>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px;">
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="C.png" style="width: 100%; border-radius: 10px;">
+            <p>Red Hat Certified 
+                Administrator</p>
+            <hr>
+            <p>AVIV P JOJI - RA2211030010097</p>
+        </div>
+
+        <div style="width: 300px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+            <img src="D.png" style="width: 100%; border-radius: 10px;">
+            <p>Red Hat Certified 
+                Administrator</p>
+            <hr>
+            <p>RASHMIKA S - RA2211030010089
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+    <div style="background-color: #004080; height: 10px;"></div>
+    <!-- <h2 style="color: #333;">Our Student's</h2>
+    <h1 style="color: #004080;">OTHER ACHIEVEMENTS</h1>
+
+    <div style="display: flex; flex-direction: column;">
+        <img src="imagess/1st.png" style="width: 400px; margin-right: 20px; justify-content: center; display: flex; align-items: center;">
+        <div>
+            <h3 style="color: #004080;">1st Place</h3>
+            <p><strong>House of the Coders Hackathon</strong></p>
+            <p>24th-25th October 2024<br>Computer Society of India, SRMIST, Kattankulathur.</p>
+            <hr>
+            <p>Aakash Patel (RA2211028010102)</p>
+            <p>Omkuma Patel (RA2211030010142)</p>
+            <p>B.Tech CSE w/s Cloud Computing</p>
+        </div>
+    </div> -->
+<div>
+    <div style="display: flex; justify-content: center;">
+    <img src="imagess/1st.png">
+    </div>
+    <div>
+        <h2 style="color: #004080;">1st Place</h2>
+            <p><strong>House of the Coders Hackathon</strong></p>
+            <p>24th-25th October 2024<br>Computer Society of India, SRMIST, Kattankulathur.</p>
+          <br>
+            <p>Aakash Patel (RA2211028010102)</p>
+            <p>Omkuma Patel (RA2211030010142)</p>
+            <p>B.Tech CSE w/s Cloud Computing</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+
+    <div style="background-color: #004080; height: 10px;"></div>
+    <!-- <h2 style="color: #333;">My Experience at CMU</h2>
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 20px;">
+        <img src="imagess/7th.png" style="width: 400px; border-radius: 10px;">
+        <h3 style="color: #004080;">NAVDEEP SINGH JAKHAR</h3>
+        <p>RA2111032010030</p>
+        <p>Section - T2 | CSE w/s IoT</p>
+        <p>Faculty Advisor: Dr.G.Suseela</p>
+    </div>
+ 
+    <p style="padding: 20px; text-align: justify; max-width: 800px; margin: auto;">
+        During my AI internship at Carnegie Mellon University (CMU) in 2024, I worked with an amazing team 
+        on a project which aimed at predicting cardiac events. Thanks to the mentors, I was able to use 
+        Machine Learning to tackle real world problems in the field of Cardiology.
+         One of the highlights of the internship was to have weekly meet-ups where we had to present 
+        research papers to our instructors. This widened my perspective in the domain and polished my 
+        critical thinking skills. The research work further helped me develop my coding and problem-solving 
+        skills. Furthermore, I received hands-on experience in applications such as app development and 
+        embedded systems as well as signal processing.
+         It took a little time to absorb everything but once I did, the experience was life changing for me. 
+        One major takeaway was that I was able to polish my already acquired skills while learning new 
+        ones. It prepared me academically and professi
+    </p> -->
+
+    <div style="background-color: #004080; height: 10px;"></div>
+<script src="nwc.js"></script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+h1{
+    font-family: 'Montserrat', sans-serif; 
+    color: #1A3D8F; 
+}
+.Krishnaraj{
+    padding-left: 500px;
+    background-color: rgb(181, 195, 227);
+}
+.krishna{
+    
+        width: 125px;  
+        height: 125px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 2px solid #ddd; 
+        display: block;
+        margin: 0 auto; 
+
+}
+.text{
+    padding-left: 665px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.desination{
+    padding-left: 650px;
+    margin-top:5px;
+    font-size: 16px;
+    position: relative;
+    top: -15px;
+
+    
+}
+.gradeii{
+    padding-left: 500px;
+    background-color: rgb(181, 195, 227);
+
+}
+.balamurgan{
+        width: 125px;  
+        height: 125px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 2px solid #ddd; 
+        display: block;
+        margin: 0 auto;
+        float:left;
+        margin-right: 10px;
+        
+        
+        
+}
+.desination1{
+    margin-left: 25px;
+    margin-right: auto;
+    position:relative;
+    top:165px;
+    left: -135px;
+}
+.Mary{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:220px;
+    top:-40px;
+}
+.text1{
+    position:relative;
+    top:90px;
+    left:50px;
+}
+.desination2{
+    position:relative;
+    top:75px;
+    left: 50px;
+}
+.murugaa
+{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:430px;
+    top:-130px;
+
+}
+.text2{
+    position: relative;
+    left:260px;
+}
+.desination3{
+    position:relative;
+    left: 260px;
+    top:-15px;
+}
+.Kalaiselvi{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:615px;
+    top: -215px;
+
+}
+.text3{
+    position:relative;
+    left: 480px;
+    top:-90px;
+}
+.desination4{
+    position:relative;
+    left:450px;
+    top:-105px;
+}
+.suseela{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:800px;
+    top: -300px;
+
+}
+.text4{
+    position:relative;
+    left:650px;
+    top:-175px;
+
+}
+.desination5{
+    position:relative;
+    top:-200px;
+    left:650px;
+
+}
+.jovith{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:-690px;
+    top:-130px;
+
+}
+.text5{
+    position: relative;
+    left: -820px;
+}
+.desination6{
+    position:relative;
+    left:-820px;
+    top:-20px;
+}
+.thanga{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left: -460px;
+    top:-240px;
+}
+.text6{
+    position:relative;
+    left:-600px;
+    top:-110px;
+
+}
+.desination7{
+    position:relative;
+    left:-600px;
+    top:-130px;
+
+}
+.spark{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left: -270px;
+    top:-345px;
+
+}
+.text7{
+    position:relative;
+    left:-420px;
+    top:-220px;
+
+}
+.desination8{
+    position:relative;
+    left:-420px;
+    top:-240px;
+}
+.Hemamalini{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left: -80px;
+    top:-450px;
+    
+
+}
+.text8{
+    position:relative;
+    left:-250px;
+    top:-330px;
+}
+.desination9{
+    position:relative;
+    left:-250px;
+    top: -350px;
+}
+.Yamini{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left: 90px;
+    top:-565px;
+
+
+}
+.text9{
+    position:relative;
+    left:1340px;
+    top:-570px;
+}
+.desination10{
+    position:relative;
+    left:1340px;
+    top:-590px;
+}
+.gradeiii{
+    background-color: rgb(181, 195, 227);
+    padding-left: 500px;
+    position:relative;
+    top:-560px;
+}
+.Vaishnavi{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:40px;
+    top:-550px;
+
+}
+.text10{
+    position:relative;
+    left:-115px;
+    top:-420px;
+}
+.desination11{
+    position:relative;
+    left:-115px;
+    top:-440px;
+}
+.Ushasukhanya{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left: 230px;
+    top:-660px;
+
+}
+.text11{
+    position:relative;
+    top:-530px;
+    left:80px;
+}
+.desination12{
+    position:relative;
+    top:-550px;
+    left:80px;
+}
+.Kayalvizhi{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:425px;
+    top:-770px;
+
+}
+.text12{
+    position:relative;
+    top:-640px;
+    left:270px;
+}
+.desination13{
+    position:relative;
+    top:-660px;
+    left:270px;
+}
+.hellen{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:600px;
+    top:-880px;
+
+}
+.text13{
+    position:relative;
+    top:-750px;
+    left:440px;
+}
+.desination14{
+
+
+    position:relative;
+    top:-770px;
+    left:440px;
+}
+.Arun{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:780px;
+    top:-990px;
+
+}
+.text14{
+    position:relative;
+    top:-860px;
+    left:640px;
+}
+.desination15{
+    position:relative;
+    top:-880px;
+    left:640px;
+}
+.Radhika{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:-650px;
+    top:-800px;
+}
+.text15{
+    position:relative;
+    top:-670px;
+    left:-810px;
+}
+.desination16{
+    position:relative;
+    top:-690px;
+    left:-810px;
+}
+.Lakshmi{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:-460px;
+    top:-910px;
+
+}
+.text16{
+    position:relative;
+    top:-780px;
+    left:-610px;
+}
+.desination17{
+    position:relative;
+    top:-800px;
+    left:-610px;
+}
+.Balaji{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:-255px;
+    top:-1020px;
+
+}
+.text17{
+    position:relative;
+    left:-425px;
+    top:-890px;
+}
+.desination18{
+    position:relative;
+    left: -425px;
+    top: -910px;
+}
+.Senthamarai{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    top:-1130px;
+    left:-90px;
+
+}
+.text18{
+    position:relative;
+    left:-250px;
+    top:-1000px;
+}
+.desination19{
+    position:relative;
+    top:-1020px;
+    left:-250px;
+}
+.Rajaram{
+    width: 125px;  
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    display: block;
+    margin: 0 auto;
+    float:left;
+    margin-right: 10px;
+    position: relative;
+    left:80px;
+    top:-1240px;
+
+
+}
+.text19{
+    position:relative;
+    top:-1235px;
+    left: 1310px;
+}
+.desination20{
+    position:relative;
+    top:-1255px;
+    left:1310px;
+}

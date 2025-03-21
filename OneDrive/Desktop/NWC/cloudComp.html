@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Specialization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 text-justify">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+    
+    <div class="max-w-6xl mx-auto p-6">
+        <h1 class="text-5xl font-extrabold text-red-900 text-center mb-8">Cloud Computing Specialization</h1>
+
+        <!-- Specialization Summary -->
+        <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <!-- <h2 class="text-3xl font-bold text-red-700 mb-4">Specialization Summary – Cloud Computing</h2> -->
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Cloud Computing is one of the most in-demand specializations in IT, shaping the future of data management, AI-driven applications, and enterprise solutions. 
+                This specialization aims to bridge the gap between academia and industry by equipping students with cloud-based deployment, infrastructure management, and cybersecurity skills.
+            </p>
+            
+            <h2 class="text-3xl font-bold text-red-700 mt-6 mb-4">Relevance</h2>
+            <ul class="list-disc list-inside text-lg text-gray-700">
+                <li>High demand for Cloud Engineers, Architects, & Data Scientists</li>
+                <li>Collaboration with top-notch industries for practical learning experiences</li>
+                <li>Focus on AI-driven cloud innovations, automation, and security</li>
+            </ul>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h1  class="text-2xl font-bold text-red-900">Faculty Members</h1>
+            <div class="bg-white shadow-lg rounded-lg p-8 flex justify-center mt-4">
+              
+                <div class="flex flex-col ml-0 mr-8">
+                    <h2 class="text-2xl font-bold"> Dr. M.Saravanan</h2>
+                    <p class="text-xl font-semibold"> Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. R.Naresh</h2>
+                    <p class="text-xl font-semibold"> Associate Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. P.Balamurugan</h2>
+                    <p class="text-xl font-semibold"> Associate Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. N.Senthamarai</h2>
+                    <p class="text-xl font-semibold"> Associate Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. Savaridassan P</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Mr. H.Karthikeyan</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Mrs. Lavanya V</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                </div>
+            
+                <div class="flex flex-col ml-14">
+                    <h2 class="text-2xl font-bold"> Mrs. V.Vijayalakshmi</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. A.Vijay Vasanth</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. S.Thenmalar</h2>
+                    <p class="text-xl font-semibold"> Associate Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Mr. K.Manikandan</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. T.R.Vedhavathy</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                    <h2 class="text-2xl font-bold"> Dr. Lakshmi Dhevi</h2>
+                    <p class="text-xl font-semibold"> Assistant Professor, NWC, SRMIST.</p>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-red-700 mb-6"> Specialized Labs:
+               <br> Things of Future Lab</h2>
+               <p class="text-lg text-gray-700 mt-2">
+                <strong>Faculty Incharge  </strong> Dr. M. Saravanan, Dr. C. Fancy<br>
+                <strong>Lab Name & Number :</strong>TP508 – Things of Future Lab<br>
+                <strong>Location:</strong> 5th Floor, Tech Park<br>
+                <strong>Research Facility  :</strong>  IoT Educational Kit<br>
+                <strong>Supplier  :</strong> Boodskap, Chennai.
+                <br>
+                The Things of Future Lab (ToF) is designed to provide an advanced IoT platform that enables 
+                seamless connectivity with hardware devices, systems, and backends to build innovative 
+                solutions. As IoT deployment requirements evolve, our lab integrates state-of-the-art AI, 
+                machine learning, and blockchain technologies in collaboration with Boodskap, a global IoT 
+                company headquartered in Dallas, Texas. This lab serves as a research and development 
+                hub for students, faculty, and scholars to explore IoT-enabled smart applications, fostering 
+                academic excellence and industrial innovation
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-red-700 mb-6"> Memorandum of Understanding (MoU)</h2>
+            <br>
+            <p class="text-lg text-gray-700 mt-2 text-relaxed">
+                To foster research collaboration and career growth,<b>Bahir Das University (2021-2022) and 
+                    Virtusa Consulting Services Pvt. Ltd. (2024-2027)  have signed transformative MoUs,</b> 
+                empowering students and faculty with cutting-edge <b>cloud computing programs, AWS 
+                training, internships, and placement opportunities.</b> While Bahir Das University focuses on 
+                <b>academic research and knowledge exchange,</b> Virtusa’s industry-driven initiative, with 47 
+                students onboard, enhances <b>hands-on learning and industry readiness,</b> paving the way for 
+                <b>future cloud computing professionals.</b>
+            </p>
+
+        </div>
+        <!-- Specialization Events -->
+        <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-red-700 mb-6">Specialization Highlights</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-red-900">Anusandhan National Research Foundation Fellowship</h3>
+                <p class="text-lg text-gray-700 mt-2">
+                    <strong>Recipient:</strong> Dr. M. Saravanan<br>
+                    <strong>Institution:</strong> IIT Roorkee<br>
+                    <strong>Duration:</strong> August 5 – December 6, 2024<br>
+                    <strong>Research Focus:</strong> Advanced Cloud Computing & Smart Infrastructure
+                </p>
+                <p class="text-lg text-gray-700 mt-4">
+                    Dr. M. Saravanan has been awarded the prestigious Anusandhan National Research Foundation Fellowship to advance research in cloud computing and smart infrastructure at IIT Roorkee. 
+                    His work focuses on optimizing cloud resource allocation, security, and AI-driven smart infrastructure solutions.
+                </p>
+                
+                <h3 class="text-xl font-bold text-green-900 mt-6">Impact</h3>
+                <ul class="list-disc list-inside text-lg text-gray-700">
+                    <li>Strengthens interdisciplinary research collaborations.</li>
+                    <li>Advances cloud computing frameworks for real-world applications.</li>
+                    <li>Contributes to academic and industrial advancements in smart infrastructure technologies.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-red-900 text-center mb-6">Other Highlights</h2>
+
+            <h3 class="text-xl font-bold text-red-700">Workshop: Data Orchestration & Management in Cloud Ecosystems</h3>
+            <p class="text-lg text-gray-700 mt-2">
+                <strong>Dates:</strong> July 25-26, August 29-30, September 30, October 1, 2024<br>
+                <strong>Resource Person:</strong> Mr. S.B. Gowtham (Data Engineer, PayPal)<br>
+                <strong>Venue:</strong> TP404/TP405 Seminar Hall, Tech Park<br>
+                <strong>Participants:</strong> 64 (Internal)
+            </p>
+
+            <h3 class="text-xl font-bold text-green-900 mt-6">Key Topics Covered</h3>
+            <ul class="list-disc list-inside text-lg text-gray-700">
+                <li>Hadoop Ecosystem & Big Data Management</li>
+                <li>Data Processing with Apache Spark & AWS Services</li>
+                <li>Cloud Security, Data Storage, and Orchestration</li>
+                <li>Real-Time Streaming with SparkSQL & DStreams</li>
+            </ul>
+
+           
+
+            <img src="pic/f8.jpg" class="mt-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-green-900 mt-6">Outcome & Impact</h3>
+            <ul class="list-disc list-inside text-lg text-gray-700">
+                <li><strong>Hands-on expertise:</strong> Practical experience with Hadoop, Apache Spark, and Cassandra</li>
+                <li><strong>Industry Alignment:</strong> Bridging academic knowledge and real-world applications</li>
+                <li><strong>Skill Development:</strong> Strengthening technical proficiency in data orchestration and cloud security</li>
+            </ul>
+        </div>
+        <!-- Outreach Program -->
+        <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-red-700 mb-6">Outreach Program – Hour of Code</h2>
+            <p class="text-lg text-gray-700">
+                <strong>Venue:</strong> Gnanodaya High School, Chengalpet, Tamil Nadu<br>
+                <strong>Dates:</strong> December 9-13, 2024<br>
+                <strong>Conveners:</strong> Dr. P. Balamurugan, Dr. M. Saravanan
+            </p>
+            <p class="text-lg text-gray-700 mt-4">
+                The Hour of Code initiative introduced school students to fundamental coding concepts through hands-on sessions.
+            </p>
+
+            <h3 class="text-xl font-bold text-green-900 mt-6">Program Highlights</h3>
+            <ul class="list-disc list-inside text-lg text-gray-700">
+                <li>Basics of block-based and text-based programming</li>
+                <li>Hands-on activities using Scratch & Python</li>
+                <li>Interactive challenges to enhance logical thinking</li>
+                <li>Encouraging students to explore careers in computer science</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-green-900 mt-6">Outcome & Impact</h3>
+            <ul class="list-disc list-inside text-lg text-gray-700">
+                <li>Increased student enthusiasm for coding and computational thinking</li>
+                <li>Empowered young minds with foundational programming skills</li>
+                <li>Strengthened industry-academia engagement in technology-driven education</li>
+            </ul>
+            <p class="text-lg text-red-700 mt-4 font-semibold">
+                The Department of Networking and Communications remains dedicated to bridging the digital divide through impactful outreach programs!
+            </p>
+            <img src="pic/f7.jpg" class="mt-4 rounded-lg shadow-md">
+        </div>
+
+        <!-- Specialized Lab -->
+        <!-- <div class="bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-4xl font-bold text-red-900 text-center mb-6">Things of Future Lab</h2>
+
+            <p class="text-lg text-gray-700">
+                <strong>Faculty Incharge:</strong> Dr. M. Saravanan, Dr. C. Fancy<br>
+                <strong>Lab Name & Number:</strong> TP508 – Things of Future Lab<br>
+                <strong>Location:</strong> 5th Floor, Tech Park<br>
+                <strong>Research Facility:</strong> IoT Educational Kit (Supplier: Boodskap, Chennai)
+            </p>
+            <p class="text-lg text-gray-700 mt-4">
+                The Things of Future Lab (ToF) provides an advanced IoT platform integrating AI, machine learning, and blockchain technologies, fostering research excellence.
+            </p>
+        </div> -->
+
+        <!-- Specialized Lab Events -->
+      
+        
+    </div>
+    <script src="nwc.js"></script>
+</body>
+</html>

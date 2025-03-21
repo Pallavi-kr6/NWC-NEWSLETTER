@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet of Things Specialization</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .specialization-labs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specialization-labs li {
+            background: #a3cfff;
+            color: rgb(0, 0, 0);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .image-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; text-align: justify;">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+    
+    <div class="container " style="display: flex; flex-direction: column;">
+        <h1>Internet of Things Specialization</h1>
+        <h2>Specialization Summary</h2>
+        <p>The Internet of Things (IoT) Specialization at SRM Institute of Science and Technology (SRM IST) under the
+            SRG focuses on advanced IoT concepts, applications, and security. It covers sensor networks, edge computing,
+            AI-driven IoT solutions, and blockchain-based security. The curriculum integrates hands-on projects, industry
+            collaborations, and real-world problem-solving. Research areas include smart cities, healthcare, industrial
+            automation, and environmental monitoring. The program emphasizes AI-empowered IoT, energy-efficient
+            protocols, and cybersecurity measures. Faculty and students actively engage in funded research, patents,
+            and publications. Industry partnerships foster internships, certifications, and career opportunities. This
+            specialization equips students with cutting-edge skills to drive innovation in the IoT ecosystem.
+            </p>
+        <h2>Specialization Labs:</h2>
+        <div class="specialization-labs">
+            <ul>
+                <li>Intel Unnati IoT Lab</li>
+                <li>Things of Future Lab</li>
+                <li>SRM Latrobe Joint Centre of Eminence Next Generation Lab</li>
+            </ul>
+            <img src="pic/indiaai.png">
+        </div>
+        <h1>Faculty members</h1>
+        <div style="display: flex;">
+        <div style="display: flex; flex-direction: column; margin-left: 0; margin-right: 32px;">
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. M.Thenmozhi</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr.N.Krishnaraj</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. P.Supraja</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. L.N.B.Srinivas</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. K.Nimala</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. S.Metilda Florence</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. L.Anand</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. V.M.Gayathri</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. V.Elizabeth Jesi</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. G.Suseela</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+        </div>
+        <div style="display: flex; flex-direction: column; margin-left: 56px;">
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. B.Yamini</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. A.Helen Victoria</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. R.Radhika</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Associate Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. M.Anand</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Assistant Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. Meenakshi K</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Assistant Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. G.Geetha</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Assistant Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. G.Saranya</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Assistant Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Mrs. G.Divya</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Assistant Professor, NWC, SRMIST</p>
+            <h2 style="font-size: 1.5rem; font-weight: bold;">Dr. M.Sivakumar</h2>
+            <p style="font-size: 1.25rem; font-weight: 600;">Assistant Professor, NWC, SRMIST</p>
+        </div>
+    </div>
+        <h2>Purpose of the Specialized Lab</h2>
+        <h3>Intel Unnati IoT Lab</h3>
+        <p>SRMIST, in collaboration with Intel
+            Technologies Pvt. Ltd., Bangalore, proudly
+            operates the Intel Unnati IoT Solutions Lab.
+            This lab is equipped with state-of-the-art
+            edge computing kits, AI-based foundation
+            kits, and Robomaker kits to empower
+            students and researchers in their pursuit of
+            innovation.
+            Our mission is to integrate AI with IoT
+            technologies to create transformative
+            solutions, bridging the gap between
+            academics and industry. Through internships
+            and consultancy projects mentored by
+            industry experts, we strive to equip young
+            engineers with industry-ready skills</p>
+        <div class="image-section">
+            <img src="pic/iot.png">
+        </div>
+        <h1>AIoT Project Expo 2024 – Fostering Innovation & Entrepreneurship </h1>
+        <h2>Specialization Summary</h2>
+        <p>The AIoT Project Expo 2024 served as a dynamic platform for students to unleash creativity and innovation in the
+            intersection of Artificial Intelligence (AI) and the Internet of Things (IoT). The event showcased groundbreaking
+            AIoT solutions with real-world applications, aiming to inspire future entrepreneurs and researchers.
+            </p>
+        <h2>Event Highlights:</h2>
+        <div class="specialization-labs">
+            <ul>
+                <li>Project Demonstrations: Students presented AIoT-based smart systems, tackling automation, healthcare,
+                    security, and industrial solutions</li>
+                <li>Expert Guidance: Faculty mentors provided valuable insights on enhancing project scalability, patent
+                    filing, and research publication opportunities.</li>
+                <li> Recognition & Motivation: Winners and participants were honored with certificates, reinforcing their
+                    confidence in product-oriented AIoT solutions and startups.</li>
+                    <li> Entrepreneurship Focus: Encouraged students to transform innovative ideas into commercial AIoT
+                        solutions, aligning with industry trends.</li>
+            </ul>
+            <img src="pic/as.png">
+            <h1>Tech Talk on Intelligent Systems of IoT Applications</h1>
+            <h2>Specialization Summary</h2>
+            <p>The Tech Talk on Intelligent Systems of
+                IoT Applications provided an in-depth
+                exploration of AI-driven IoT solutions,
+                covering end-to-end application
+                development, AI model building, and
+                seamless deployment techniques.
+                Experts shared professional insights
+                into creating user-friendly AI interfaces,
+                equipping participants with industryrelevant skills and knowledge.
+                </p>
+            <h2>Specialization Labs:</h2>
+            <div class="Outcomes & Impact">
+                <ul>
+                    <li>Deepened Understanding of AI
+                        & Generative AI Tools – Participants
+                        explored cutting-edge AI frameworks and tools relevant to IoT applications.</li>
+                    <li>Hands-on Experience in Model Development & Deployment – Practical demonstrations enhanced
+                        technical proficiency in AI-driven automation.</li>
+                </ul>
+                <img src="pic/wa.png">
+            </div>
+            <h2>Project Spotlight</h2>
+            <h3>Arc to Accuracy</h3>
+            <p>An AI-powered website hosted on the Intel Unnati Lab server, “Arc to Accuracy,” was launched at the 2nd
+                International Conference on Innovations in Physical Education, Sports & Yogic Sciences on 9th November
+                2024. Developed in collaboration with SRMIST’s Directorate of Sports, this project analyzes basketball players’
+                performance, assisting coaches in refining training strategies.</p>
+                <h3>Field Trip Experience</h3>
+            <p>A field trip was organized on 4th October 2024 to SRMIST Agricultural Sciences, Acharapakkam, for AIoT
+                project data collection and validation.
+                Students gathered pig health parameters for a monitoring system.
+                Weed images were collected for a weed detection and cutting project.
+                This hands-on experience strengthened students’ understanding of real-time AIoT applications</p>
+                <h1>Things of Future Lab</h1>
+        <h2>Purpose of the Lab</h2>
+        <p>The Things of Future Lab (ToF) at SRMIST
+            provides an IoT platform for rapid
+            prototyping and hardware development.
+            In collaboration with Bookskap, a
+            disruptive IoT platform company, the
+            lab enables the creation of scalable and
+            flexible IoT solutions.
+            </p>
+        <h2>Specialized Equipment (Worth ₹3.87 L):</h2>
+        <div class="specialization-labs">
+            <ul>
+                <li>ESP32</li>
+                <li>STM</li>
+                <li>Sensors Kit</li>
+            </ul>
+            <h2>Ongoing Projects :</h2>
+            <div class="specialization-labs">
+                <ul>
+                    <li>KUPI - Electricity Generating Flask</li>
+                    <li>DRIP - Digitally Responsive Irrigated Plantation</li>
+                    <li>Smart Campus Management - Electrical Energy Conservation System</li>
+                    <li> Automated Irrigation System - Crop protection with Movement and Sound Detection Sensor</li>
+                </ul>
+            <img src="pic/qw1.png">
+            <h1>SRM-Latrobe Joint Centre of Eminence on Next
+                Generation Technologies</h1>
+            <h2>Purpose of the Lab</h2>
+            <p>Bridging minds and technologies, the
+                SRM LaTrobe Joint Centre of Eminence
+                pioneers groundbreaking advancements
+                in the Internet of Things (IoT). This lab
+                explores AI, robotics, and smart systems,
+                focusing on revolutionizing healthcare,
+                agriculture, and manufacturing.
+                Innovations include robots assisting
+                surgeons, intelligent sensors optimizing
+                agricultural yields, and smart city
+                connectivity.
+                </p>
+                <h2>Colabrated Course:</h2>
+                <div class="specialization-labs">
+                    <ul>
+                        <li>21CSE305P - SerBot Project-Based Learning in
+                            Robotics</li>
+                    </ul>
+            <h2>Specialized Equipment (Worth ₹5.87 L):</h2>
+            <div class="specialization-labs">
+                <ul>
+                    <li>AISerbot with LIDAR</li>
+                    <li>Linux Kernel 4.19</li>
+                    <li>X-Server</li>
+                    <li>Tool Chain - GCC 9</li>
+                    <li>Mosquitto (MQTT)</li>
+                </ul>
+                <h2>Ongoing Projects :</h2>
+                <div class="specialization-labs">
+                    <ul>
+                        <li>Vitiligo progression monitor using Deep CNN</li>
+                        <li> Voice Classification</li>
+                        <li>Object Detection</li>
+                    </ul>
+                <img src="pic/2s.png">
+
+                <div style="background-color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 32px; margin-top: 24px;">
+                    <h2 style="font-size: 1.875rem; color: #b7791f; font-weight: bold; margin-bottom: 16px;">Memorandum of Understanding (MoU)</h2>
+                    <p style="color: #1a202c; font-size: 1.25rem; margin-top: 16px; line-height: 1.625;">
+                        The Internet of Things (IoT) specialization MoUs are Swinburne University of Technology, 
+                        Sarawak Campus (2024) and Intel Technology Pvt. Ltd. (2024). The Swinburne University MoU, 
+                        lasting three years, focuses on mutual collaboration in research projects, publications, 
+                        and student, faculty exchange programs. Similarly, the Intel Technology MoU, also for three 
+                        years, provides opportunities for IoT-related courses and industrial training at Intel. These 
+                        collaborations aim to enhance academic research, skill development, and industry exposure, 
+                        ensuring students gain practical expertise and career opportunities in the growing field of IoT.
+                    </p>
+                </div>
+                
+    </div>
+    <script src="nwc.js"
+    ></script>
+</body>
+</html>

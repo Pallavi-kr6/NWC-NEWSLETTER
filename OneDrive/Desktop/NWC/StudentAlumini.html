@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Connect</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; color: #333;">
+    <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+
+    <div style="padding: 50px 20px; font-size: 32px; font-weight: bold; color: #2c3e50;">
+        ALUMNI CONNECT
+    </div>
+
+    <div style="margin: auto; max-width: 300px;">
+        <img src="pic/v.jpg" alt="Alumni Image" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    </div>
+
+    <div style="margin-top: 20px;">
+        <div style="font-size: 24px; font-weight: bold; color: #2c3e50;">Venkata Sai P Bhamidipati</div>
+        <p style="margin: 5px 0; font-size: 18px; font-weight: 600; color: #2980b9;">Junior Software Test Automation Engineer</p>
+        <p style="margin: 5px 0; font-size: 16px; font-weight: 500; color: #555;">EPAM Systems</p>
+    </div>
+
+    <div style="margin-top: 40px; padding: 20px; background-color: white; max-width: 800px; margin-left: auto; margin-right: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #2c3e50;">My Journey as an SRM Alumnus</h2>
+        <p style="text-align: left; line-height: 1.6; font-size: 16px;">Dear SRM Community,</p>
+        <p style="text-align: left; line-height: 1.6; font-size: 16px;">
+            I am honored to share my experiences as an alumnus of SRM Institute of Science and Technology, 
+            where I completed my B.Tech in Computer Science Engineering with a specialization in Information Technology from 2019 to 2023.
+        </p>
+        <p style="text-align: left; line-height: 1.6; font-size: 16px;">
+            Reflecting on my time at SRM, I am grateful for the vibrant platform it provided for education and exploration.
+            The diverse range of courses and activities offered a strong foundation, but one of the most important 
+            lessons I learned is that education is a personal journey.
+        </p>
+        <p style="text-align: left; line-height: 1.6; font-size: 16px;">
+            While SRM sets the stage, the responsibility to learn and grow rests with everyone. 
+            Taking the initiative to delve deeper into subjects, seek out additional resources, 
+            and pursue personal projects is key to truly mastering any field.
+        </p>
+    </div>
+
+    <div style="margin-top: 40px; padding: 20px; background-color: white; max-width: 800px; margin-left: auto; margin-right: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <h3 style="color: #2c3e50;">To my juniors, here are a few insights I’d like to share:</h3>
+        <ul style="text-align: left; line-height: 1.6; font-size: 16px; list-style-type: none; padding: 0;">
+            <li><strong>1. Take Charge of Your Learning:</strong> Use the resources available at SRM as a starting point, but always be proactive in seeking out knowledge beyond the curriculum.</li>
+            <li><strong>2. Explore and Experiment:</strong> Don’t hesitate to explore different areas within your field. This will help you identify your interests and build a versatile skill set.</li>
+            <li><strong>3. Build a Strong Network:</strong> Technical skills are crucial, but networking with peers, faculty, and industry professionals opens doors to new opportunities.</li>
+            <li><strong>4. Stay Curious and Adaptable:</strong> The tech industry is always evolving. Cultivate a mindset of curiosity and adaptability to stay ahead in your career.</li>
+            <li><strong>5. Learn from Every Experience:</strong> Successes and setbacks alike are valuable learning opportunities. Embrace them as part of your growth journey.</li>
+        </ul>
+        <p style="text-align: left; font-size: 16px; font-style: italic;">
+            I look forward to seeing how current and future students continue to innovate and excel. 
+            Remember, while SRM provides the platform, your journey of learning and success is uniquely yours.
+        </p>
+    </div>
+<script src="nwc.js"></script>
+</body>
+</html>

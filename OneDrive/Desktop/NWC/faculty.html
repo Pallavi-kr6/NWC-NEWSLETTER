@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <!-- Logo Section -->
+       <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
+        <img src="logo.png" style="height: 48px;" alt="Logo">
+        <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 20px; justify-content: center; ">
+        <select id="HomePage" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;"  onchange="redirectToPa()">
+            <option>HOMEPAGE SECTION</option>
+            <option value="homePage.html">HomePage</option>
+        </select>
+        <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
+            <option>FACULTY SECTION</option>
+            <option value="faculty.html">FACULTY</option>
+            <option value="essays.html">Faculty Articles</option>
+            <option value="achivements.html">Faculty Achievements</option>
+            <option value="promotion.html">Faculty Promotions</option>
+        </select>
+
+        <select id="events" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagess()">
+            <option value="#">EVENTS SECTION</option>
+            <option value="events.html">Events</option>
+        </select>
+
+        <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
+            <option value="#">Research Section</option>
+            <option value="patent.html">PATENTS</option>
+            <option value="FundedResearch.html">Fundings</option>
+            <option value="journalism.html">Journals</option>
+        </select>
+
+        <select id="students" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPagessss()">
+            <option value="#">STUDENTS</option>
+            <option value="Studentachivement.html">Achievements</option>
+            <option value="placement.html">Placements</option>
+            <option value="StudentAlumini.html">Alumni Message</option>
+            <option value="StudentArticle.html">Student Article</option>
+            <option value="mou.html">International Collaboration</option>
+        </select>
+
+        <select id="specializationSelect" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPages()">
+            <option value="#">Specialization Section</option>
+            <option value="cyberLab.html">Cyber Security</option>
+            <option value="InformationTech.html">Information Technology</option>
+            <option value="cloudComp.html">Cloud Computing</option>
+            <option value="iot.html">Internet of Things</option>
+            <option value="clomputerNetworking.html">Computer Networking</option>
+        </select>
+    </div>
+    
+    <div class="container ">
+
+     
+        <h1>Consultancy Work Highlights</h1>
+        <h3>(November 2023 - March 2024)</h3>
+        <h2>"Empowering Future Cybersecurity Leaders"</h2>
+        <p class="highlight">Development of Content for the Master of Cyber Security Program</p>
+        <p>“This collaboration bridges expertise and innovation, shaping a global standard for cybersecurity education.”</p>
+        <p><strong>Collaborating Agency:</strong> International School of Global Leaders, Australia</p>
+
+        <h2>Faculty Members</h2>
+        <div class="faculty">
+            <div class="faculty-member">
+                <img src="pic/mukesh.jpg" alt="Dr. M.B. Mukesh Krishnan">
+                <p><strong>Dr. M.B. Mukesh Krishnan</strong><br>Professor, NWC, SRMIST</p>
+            </div>
+            <div class="faculty-member">
+                <img src="pic/thenmozhi.jpg" alt="Dr. M. Thenmozhi">
+                <p><strong>Dr. M. Thenmozhi</strong><br>Professor, NWC, SRMIST</p>
+            </div>
+            <div class="faculty-member">
+                <img src="pic/saravanan.jpg" alt="Dr. M. Saravanan">
+                <p><strong>Dr. M. Saravanan</strong><br>Professor, NWC, SRMIST</p>
+            </div>
+            <div class="faculty-member">
+                <img src="pic/venkatesh.jpg" alt="Dr. K. Venkatesh">
+                <p><strong>Dr. K. Venkatesh</strong><br>Associate Professor, NWC, SRMIST</p>
+            </div>
+            <div class="faculty-member">
+                <img src="pic/sujatha.jpg" alt="Dr. G. Sujatha">
+                <p><strong>Dr. G. Sujatha</strong><br>Assistant Professor, NWC, SRMIST</p>
+            </div>
+        </div>
+
+        <p class="total-amount">Total Consultancy Amount: ₹8,23,672</p>
+        <p><em>“Through strategic partnerships, we continue to redefine education in cybersecurity on a global scale.”</em></p>
+    </div>
+
+    <!-- <script>
+        function redirectToPage() {
+            var faculty = document.getElementById("faculty").value;
+            if (faculty !== "FACULTY SECTION") {
+                window.location.href = faculty;
+            }
+        }
+
+        function redirectToPagess() {
+            var events = document.getElementById("events").value;
+            if (events !== "#") {
+                window.location.href = events;
+            }
+        }
+
+        function redirectToPagesss() {
+            var research = document.getElementById("Research").value;
+            if (research !== "#") {
+                window.location.href = research;
+            }
+        }
+
+        function redirectToPagessss() {
+            var students = document.getElementById("students").value;
+            if (students !== "#") {
+                window.location.href = students;
+            }
+        }
+
+        function redirectToPages() {
+            var specialization = document.getElementById("specializationSelect").value;
+            if (specialization !== "#") {
+                window.location.href = specialization;
+            }
+        }
+    </script> -->
+    <script src="nwc.js"></script>
+</body>
+</html>
