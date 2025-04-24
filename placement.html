@@ -5,10 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placement</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function redirectToPa() {
+            var select = document.getElementById("HomePage");
+            var value = select.value;
+            if (value !== "HOMEPAGE SECTION") {
+                window.location.href = value;
+            }
+        }
+    
+        function redirectToPage() {
+            var select = document.getElementById("faculty");
+            var value = select.value;
+            if (value !== "FACULTY SECTION") {
+                window.location.href = value;
+            }
+        }
+    
+        function redirectToPagess() {
+            var select = document.getElementById("events");
+            var value = select.value;
+            if (value !== "#") {
+                window.location.href = value;
+            }
+        }
+    
+        function redirectToPagesss() {
+            var select = document.getElementById("Research");
+            var value = select.value;
+            if (value !== "#") {
+                window.location.href = value;
+            }
+        }
+    
+        function redirectToPagessss() {
+            var select = document.getElementById("students");
+            var value = select.value;
+            if (value !== "#") {
+                window.location.href = value;
+            }
+        }
+    
+        function redirectToPages() {
+            var select = document.getElementById("specializationSelect");
+            var value = select.value;
+            if (value !== "#") {
+                window.location.href = value;
+            }
+        }
+    </script>
+    
 </head>
 <body>
     <div id="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; justify-content: center;">
-        <img src="logo.png" style="height: 48px; width: 48px;" alt="Logo">
+        <img src="pic/logo.png" style="height: 48px; width: 48px;" alt="Logo">
         <h1 style="font-size: 1.25rem; font-weight: bold;">SRM INSTITUTE OF TECHNOLOGY</h1>
     </div>
     
@@ -19,7 +69,7 @@
         </select>
         <select id="faculty" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a;" onchange="redirectToPage()">
             <option>FACULTY SECTION</option>
-            <option value="faculty.html">FACULTY</option>
+            <option value="faculty.html">Consultancy</option>
             <option value="essays.html">Faculty Articles</option>
             <option value="achivements.html">Faculty Achievements</option>
             <option value="promotion.html">Faculty Promotions</option>
@@ -32,7 +82,7 @@
 
         <select id="Research" style="border: 1px solid #ccc; padding: 8px; border-radius: 6px; color: #4a4a4a; width: 12rem;" onchange="redirectToPagesss()">
             <option value="#">Research Section</option>
-            <option value="patent.html">PATENTS</option>
+            <option value="patent.html">Patents</option>
             <option value="FundedResearch.html">Fundings</option>
             <option value="journalism.html">Journals</option>
         </select>
@@ -63,10 +113,10 @@
     <div class="placementimages">
         <br>
         <br>
-        <div><img id="meeting" src="meeting.jpg" height="500px" width="650px"></div>
+        <div><img id="meeting" src="pic/meeting.jpg" height="500px" width="650px"></div>
         <div class="imagesi">
-        <div id="placementimagesia"><div class="fontsinsidebox"><p id="size">97.95 %</p> Placed in 2022 Batch</div></div>
-        <div id="placementimagesib" style="height: auto;"><div class="fontsinsidebox"><p id="size">84.00 % </p> Placed in 2024 Batch Till Jan</div></div>
+        <div id="placementimagesia" style="height: auto;"><div class="fontsinsidebox"><p id="size">97.95 %</p> Placed in 2022 Batch</div></div>
+        <div id="placementimagesib" style="height: auto;"><div class="fontsinsidebox"><p id="size" style="height: auto;">84.00 % </p> Placed in 2024 Batch Till Jan</div></div>
         </div>
         <div class="imagesii">
         <div id="placementimagesiia"><div class="fontsinsidebox"><p id="size">93.08 %</p> Placed in 2023 Batch</div></div>
@@ -74,41 +124,41 @@
     </div> 
      </div>
     </div>
-    <div class="fourboxes" >
-        <div id="firstbox" ><p class="offers">12 Marquee Offers</p><p class="info">(2022 Batch) with the Highest Package of </p><h1 style="color: pink;">42.5 LPA</h1></div>
-        <div id="secondbox"><p class="offers">13 Marquee Offers</p><p class="info">(2023 Batch) with the Highest Package of </p><h1 style="color: pink;">70 LPA</h1></div>
-        <div id="thirdbox"><p class="offers">13 Marquee Offers</p><p class="info">(2024 Batch) with the Highest Package of </p><h1 style="color: pink;">52 LPA</h1></div>
-        <div id="fourthbox"><p class="offers">15 Marquee Offers</p><p class="info">(2025 Batch) with the Highest Package of </p><h1 style="color: pink;">26 LPA</h1></div>
+    <div class="fourboxes">
+        <div id="firstbox" ><p class="offers">12 Marquee Offers</p><p class="info">(2022 Batch) with the Highest Package of </p><h1>42.5 LPA</h1></div>
+        <div id="secondbox"><p class="offers">13 Marquee Offers</p><p class="info">(2023 Batch) with the Highest Package of </p><h1>70 LPA</h1></div>
+        <div id="thirdbox"><p class="offers">13 Marquee Offers</p><p class="info">(2024 Batch) with the Highest Package of </p><h1>52 LPA</h1></div>
+        <div id="fourthbox"><p class="offers">15 Marquee Offers</p><p class="info">(2025 Batch) with the Highest Package of </p><h1>26 LPA</h1></div>
     </div>
     <br>
     <br>
     <br>
     <br>
-    <div class="subtopic" style="font-size: xx-large; display: flex; flex-direction: column; justify-content: center; text-align: justify;"><p id="t1">UG-Placement Training</p></div>
+    <div class="subtopic"><p id="t1">UG-Placement Training</p></div>
     <br>
-    <p class="paragraph" style="display: flex; flex-direction: column;  text-align: justify;"> The Department of Networking and 
+    <p class="paragraph" style="text-align: justify; "> The Department of Networking and 
         Communications (NWC) organized a series 
         of impactful placement training sessions in 
         October 2024 to prepare students for upcoming 
         recruitment drives. </p>
     <br>
-    <div class="subtopic" style="text-align: justify;"><p id="t1"> Highlights of the events include:</p></div>
-    <p class="paragraph" style="text-align: justify;"> Placement Mock Test Series 01 – Technical 
+    <div class="subtopic"><p id="t1"> Highlights of the events include:</p></div>
+    <p class="paragraph"  style="text-align: justify;"> Placement Mock Test Series 01 – Technical 
         Aptitude Tests 04 & 05: Held on October 4 and 
         19, these tests, coordinated by Dr. M. Maranco, 
         Dr. N. Deepa, Dr. Mursal Hamdani, and Dr. 
         R. Logeshwari, assessed technical skills and 
         aptitude.</p>
-         <p class="paragraph" style="text-align: justify;">Placement Mock Interviews (Sessions 15–23): 
+         <p class="paragraph"   style="text-align: justify;">Placement Mock Interviews (Sessions 15–23): 
         Aimed at refining students’ interview readiness, 
         sessions were conducted on multiple dates, 
         coordinated by Dr. M. Maranco and Dr. M. 
         Nivedhitha.</p>
-        <p class="paragraph" style="text-align: justify;">Programming the Fun Way – Session 2: On 
+        <p class="paragraph"  style="text-align: justify;">Programming the Fun Way – Session 2: On 
         October 8, this engaging session, led by Dr. 
         M. Maranco, Dr. Mursal Hamdani, and Dr. N. 
         Deepa, provided an innovative approach to  programming.</p>
-        <p class="paragraph" style="text-align: justify;"> These initiatives were met with enthusiastic 
+        <p class="paragraph"  style="text-align: justify;"> These initiatives were met with enthusiastic 
        participation 
        and 
        students’ 
@@ -119,7 +169,7 @@
        interview preparation skills. The department 
        remains committed to empowering students for 
        successful placement outcomes.</p>
-       <p class="paragraph" style="text-align: justify;">The placement training program conducted 
+       <p class="paragraph"  style="text-align: justify;">The placement training program conducted 
        during October, November, and December 
        effectively prepared students for the upcoming 
        recruitment season. By integrating technical 
@@ -128,7 +178,7 @@
        well-rounded approach that enhanced students’ 
        skills and provided valuable exposure to real
        world placement scenarios.</p>
-       <p class="paragraph" style="text-align: justify;"> The enthusiastic participation of students, 
+       <p class="paragraph"  style="text-align: justify;"> The enthusiastic participation of students, 
        coupled with positive feedback on the training 
        sessions, underscores the program’s impact. 
        We are confident that these initiatives will 
@@ -228,7 +278,7 @@
                <p class="section"> CN, Q1 Section    </p> <p class="name">Optum</p>
                 <p class="name">  CTC : 20.7 LPA</p>
             </div>
-            <div class="profile"><img  id="profile" src="images/9th.png" height="300px" width="300px"></div>
+            <div class="profile"><img  id="profile" src="images/9th.png" ></div>
         </div>
         <div class="rightrow">
             <div class="profile"><img  id="profile" src="images/10th.png" height="300px" width="300px"></div>
@@ -264,7 +314,7 @@
     <br>
     <br>
     <br>
-    <div class="sixthrow" style="display: flex; justify-content: center;">
+    <div class="sixthrow">
         <div class="leftrow">
             <div class="info"><p class="name"> ASHISH SRIVASTAVA </p><p class="section"> RA2311031010040 </p>
                 <p class="name">Satya Micro capital</p>
@@ -284,7 +334,7 @@
     </div>
     <br>
     <br>
-    <div class="seventhrow"  style="display: flex; justify-content: center; margin-right: 250px;">
+    <div class="seventhrow">
         <div class="leftrow">
             <div class="info"><p class="name1">  NIKHIL TATYASAHEB PATIL 
                 BABAR  </p><p class="section"> RA2111030010194</p>
@@ -304,7 +354,7 @@
     <br>
     <br>
     <br>
-    <div class="eightrow" style="display: flex; justify-content: center; margin-right: 250px;">
+    <div class="eightrow">
         <div class="leftrow">
             <div class="info"><p class="name">   PARVATHI GOPAKUMA   </p><p class="section">RA2211028010170 </p>  
                 <p class="name">Acuity Knowledge Partners </p> <p class="name">Duration : 1 Month</p>
@@ -322,7 +372,7 @@
     </div>
     <br>
     <br>
-    <div class="ninthrow" style="display: flex; justify-content: center; margin-right: 250px;">
+    <div class="ninthrow">
         <div class="leftrow">
             <div class="info"><p class="name">    GARV MITTA   </p><p class="section">RA2211032010005 </p>
                <p class="name"> Crinoid Technologies Pvt. Ltd   </p> <p class="name">Duration : 1 Year</p>
@@ -397,7 +447,7 @@
     <br>
     <br>
     <br>
-    <div class="eleventhrow" style="display: flex; justify-content: center; margin-right: 100px;">
+    <div class="eleventhrow">
         <div class="leftrow">
             <div class="info"><p class="name">  NSSS RAJA RAM PULAVARTHI  </p><p class="section">RA2111030010146  </p>
                <p class="section"> CS, O2 Section </p> <p class="name">VGM Soft Tech </p>
@@ -415,7 +465,7 @@
     </div>
     <br>
     <br>
-    <div class="twelthrow" style="display: flex; justify-content: center; margin-right: 100px;">
+    <div class="twelthrow">
         <div class="leftrow">
             <div class="info"><p class="name">  GOWTHAM G   </p><p class="section">RA2111030010150    </p>
                 <p class="section">CS, O2 Section</p> <p class="name">VGM Soft Tech</p>
@@ -451,7 +501,7 @@
     </div>
     <br>
     <br>
-    <div class="fourteenthrow" style="display: flex; justify-content: center; margin-right: 250px;">
+    <div class="fourteenthrow">
         <div class="leftrow">
             <div class="info"><p class="name">    KSS NAVYA    </p><p class="section">RA2111028010086  </p>
                <p class="section"> CC, P1 Section   </p> <p class="name">VGM Soft Tech </p>
@@ -469,7 +519,7 @@
     </div>
     <br>
     <br>
-    <div class="fifteenthrow" style="display: flex; justify-content: center; margin-right: 250px;">
+    <div class="fifteenthrow">
         <div class="leftrow">
             <div class="info"><p class="name">     MAHESH KANDULA    </p><p class="section">RA2111028010076     </p>
                <p class="section"> CC, P1 Section     </p> <p class="name">VGM Soft Tech</p>
@@ -487,7 +537,7 @@
     </div>
     <br>
     <br>
-    <div class="sixteenthrow" style="display: flex; justify-content: center; margin-right: 250px;">
+    <div class="sixteenthrow">
         <div class="leftrow">
             <div class="info"><p class="name">     SHUBHRADIP SAHA   </p><p class="section">RA2111030010210       </p>
                <p class="section"> CS, P2 Section     </p> <p class="name">Wisework </p>
@@ -513,6 +563,6 @@
     <br>
     <br>
 
-    <script src="nwc.js"></script>
+    
 </body>
 </html>

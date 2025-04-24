@@ -1,4 +1,3 @@
-
 body{
     background: rgb(236, 255, 219);
     font-family: 'Montserrat', sans-serif; 
@@ -92,14 +91,14 @@ body{
     border-radius: 0.5rem; 
      border-color: darkgreen;
 } */
-img {
+/* img {
     margin-left: 6rem;
     border: 3px solid darkgreen;
     border-radius: 7px;
     padding: 5px;
     width: 13rem;
     height: 15rem;
-  }
+  } */
  
 .details{
     font-size: 1.5rem;
@@ -271,8 +270,8 @@ font-size: 50px;
     text-align: center;
 }
 .profile img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
@@ -547,6 +546,7 @@ body{
 .firstrow{
     display: flex;
     justify-content: center;
+    margin-left: -30px;
 }
 .secondrow{
     display: flex; 
@@ -572,50 +572,60 @@ body{
 .fifthrow{
     display: flex;
     justify-content: center;
+    margin-left: 30px;
 }
 .sixthrow{
     display: flex;
     justify-content: center;
+    margin-left: 120px;
 }
 .seventhrow{
     display: flex;
     justify-content: center;
+    margin-left: -90px;
 }
 .eightrow{
     display: flex;
     justify-content: center;
+    margin-left: -50px;
 }
 .ninthrow{
     display: flex;
     justify-content: center;
+    /* margin-left: 100px; */
 }
 .tenthrow{
     display: flex;
     justify-content: center;
+    margin-left: 200px;
 }
 .eleventhrow{
     display: flex;
     justify-content: center;
+    margin-left: -60px;
 }
 .twelthrow{
     display: flex;
     justify-content: center;
+    margin-left: 20px;
 }
 .thirteenthrow{
     display: flex;
     justify-content: center;
+    margin-left: 100px;
 }
 .fourteenthrow{
     display: flex;
-    margin-left: 260px;
+    margin-left: 210px;
+    /* margin-left: ; */
 }
 .fifteenthrow{
     display: flex;
-    margin-left: 260px;
+    margin-left: 210px;
 }
 .sixteenthrow{
     display: flex;
-    margin-left: 230px;
+    margin-left: 200px;
 }
 .name{
     font-size: 30px;
@@ -632,5 +642,3 @@ body{
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-
